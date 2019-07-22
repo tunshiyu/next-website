@@ -1,0 +1,10 @@
+node_modules
+build/*
+__tests__
+android
+ios
+package-lock.json
+package.json
+tsconfig.json
+components/**/*.json
+__mocks__

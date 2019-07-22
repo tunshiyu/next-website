@@ -1,0 +1,12 @@
+/node_modules
+/.vscode
+/yarn.lock
+/yarn-error.log
+/dist
+/build
+/.docz
+/.doc
+/.next
+/coverage
+/lib
+/es
