@@ -19,7 +19,11 @@ module.exports = {
       ],
     }),
     px2rem({
+      rootValue: 16,
+      propList: ['*'],
+      selectorBlackList: ['ant-*'],
       replace: false, // 保留px
+      minPixelValue: 0,
     }),
   ],
 };
