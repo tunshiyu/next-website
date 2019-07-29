@@ -1,0 +1,76 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixin';
+
+.container {
+  background-image: url(/static/homepage/solutions/background@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
+
+  .header {
+    .header();
+    color: white;
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+    .menuitem {
+      color: white;
+      font-size: 24px;
+      line-height: 33px;
+      cursor: pointer;
+
+      &::after {
+        content: '|';
+        line-height: 33px;
+        padding: 0 24px;
+        color: white;
+
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+
+      &.active {
+        color: red;
+      }
+    }
+  }
+}
+
+:global {
+  .slick-dots {
+    bottom: -70px;
+
+    li {
+      width: 72px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.3);
+
+      &.slick-active {
+        width: 72px;
+        height: 8px;
+        background: #207AF2;
+      }
+
+      button {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

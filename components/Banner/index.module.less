@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keywords,
+.text {
+  font-size: 50px;
+  color: white;
+  line-height: 125px;
+}
+
+.keywords {
+  width: 1010px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slickDots {
+  margin: 0;
+  transform: translateY(-120px);
+
+  :global {
+    .slick-active {
+      width: 72px;
+      height: 8px;
+      background: #207AF2;
+    }
+  }
+
+  li {
+    width: 72px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+
+
+    button {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

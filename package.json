@@ -22,13 +22,13 @@
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
     "next": "^9.0.2",
+    "rc-menu": "^7.4.23",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^3.7.0",
     "react-slick": "^0.24.0"
   },
   "devDependencies": {
-    "postcss-pxtorem": "^4.0.1",
     "@types/classnames": "^2.2.9",
     "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
@@ -61,6 +61,7 @@
     "less": "^3.9.0",
     "lint-staged": "^9.2.0",
     "postcss-loader": "^3.0.0",
+    "postcss-pxtorem": "^4.0.1",
     "prettier": "^1.18.2",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"

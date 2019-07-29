@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.container {
+  .container();
+
+  .header {
+    .header();
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(7, 150px);
+    grid-gap: 20px;
+    justify-content: center;
+    padding-bottom: 120px;
+
+    .img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}

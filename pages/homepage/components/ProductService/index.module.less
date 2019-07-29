@@ -1,0 +1,72 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixin';
+
+.container {
+  background-image: url(/static/homepage/services/background@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 120px;
+
+  .header {
+    .header();
+    padding-top: 0;
+  }
+
+  .body {
+    .container();
+
+    .service {
+      display: flex;
+      padding-bottom: 60px;
+
+      .img {
+        width: 540px;
+        height: 540px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 120px;
+
+        .title {
+          font-size: 28px;
+          color: @title-color;
+          line-height: 40px;
+          padding-bottom: 16px;
+        }
+
+        .subtitle {
+          font-size: 20px;
+          color: @subtitle-color;
+          line-height: 26px;
+          padding-bottom: 16px;
+        }
+
+        .desc {
+          .desc();
+        }
+
+        .link {
+          width: 160px;
+          height: 48px;
+          line-height: 48px;
+          border-radius: 32px;
+          font-size: 16px;
+          margin-top: 20px;
+        }
+      }
+
+      &.odd {
+        flex-direction: row-reverse;
+
+        .content {
+          margin-left: 0;
+          margin-right: 120px;
+        }
+      }
+    }
+  }
+}

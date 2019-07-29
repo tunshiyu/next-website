@@ -8,9 +8,9 @@ import Solutions from './components/Solutions';
 import ContactUs from '@components/ContactUs';
 import Footer from '@components/Footer';
 import Layout from '@components/Layout';
-import Link from 'next/link';
 import Partners from '@components/Partners';
 import { PartnerItem } from 'interfaces';
+import Header from '@components/Header';
 
 export default function Homepage() {
   const banners = [
@@ -119,6 +119,7 @@ export default function Homepage() {
       </Head>
       <Layout>
         <div className={styles.container}>
+          <Header />
           <Banner banners={banners} />
           <Advantages advantages={advantages} />
           <ProductService services={services} />
@@ -126,9 +127,6 @@ export default function Homepage() {
           <Partners title="合作客户" partners={partners} />
           <ContactUs />
           <Footer />
-          <Link href="/comment">
-            <a>comment</a>
-          </Link>
         </div>
       </Layout>
     </>

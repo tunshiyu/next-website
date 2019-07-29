@@ -1,0 +1,133 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.active() {
+  border: none;
+  border-top: 6px solid @primary-color;
+  color: white;
+  background-color: transparent;
+}
+
+.container {
+  .container();
+  position: relative;
+
+  .content {
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 159px;
+      height: 45px;
+    }
+
+    .btn {
+      width: 142px;
+      height: 42px;
+      border-radius: 42px;
+      line-height: 42px;
+      font-size: 16px;
+    }
+
+    .menu {
+      background-color: transparent;
+      border-bottom: none;
+      color: @menu-color;
+      margin-top: 0;
+      border-radius: 0;
+
+      :global {
+        .rc-menu-item {
+          min-width: 56px;
+          text-align: center;
+          border-bottom: none;
+          padding: 20px;
+
+          a {
+            color: @menu-color;
+            text-decoration: none;
+          }
+
+          &-active,
+          &-selected {
+            .active();
+          }
+        }
+
+        .rc-menu-submenu {
+          border-bottom: 0;
+          cursor: pointer;
+
+          &-active {
+            .active();
+          }
+
+          .rc-menu-submenu-title {
+            background-color: transparent;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &.sticky {
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    max-width: 100%;
+
+    .content {
+      position: initial;
+      max-width: 1240px;
+      margin: 0 auto;
+
+      :global {
+        .rc-menu-item {
+
+          &-selected,
+          &-active {
+            a {
+              color: @primary-color;
+            }
+          }
+        }
+
+        .rc-menu-submenu-active {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}
+
+.popupMenu {
+  background-color: transparent;
+
+  .arrowRight {
+    display: inline-block;
+    font-size: inherit;
+    vertical-align: baseline;
+    text-align: center;
+    text-transform: none;
+    text-rendering: auto;
+    position: absolute;
+    right: 6PX; // px2rem插件的特殊写法
+  }
+
+  :global {
+    .rc-menu-item {
+      a {
+        color: @menu-item-color;
+        text-decoration: none;
+      }
+    }
+  }
+}

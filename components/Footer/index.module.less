@@ -1,0 +1,70 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.container {
+  background: @footer-color;
+}
+
+.footer {
+  .container();
+
+  .content {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      width: 400px;
+
+      .logo {
+        width: 180px;
+        margin-bottom: 40px;
+      }
+
+      .info {
+        color: @menu-color;
+        font-size: 16px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .right {
+      flex: 1;
+      margin-left: 330px;
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        color: white;
+        font-size: 20px;
+        line-height: 26px;
+        padding-bottom: 40px;
+      }
+
+      .links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+
+        .linkWrap {
+          padding-bottom: 30px;
+
+          .link {
+            color: @menu-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding-top: 74px;
+    padding-bottom: 20px;
+  }
+}
