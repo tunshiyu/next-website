@@ -118,7 +118,7 @@ export default function Homepage() {
         />
       </Head>
       <Layout>
-        <div className={styles.container}>
+        <div className={styles.page}>
           <Header />
           <Banner banners={banners} />
           <Advantages advantages={advantages} />
