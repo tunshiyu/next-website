@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Layout from '@components/Layout';
 import Header from '@components/Header';
 import Banner from '@components/Banner';
-// import Partners from '@components/Partners';
+import Partners from '@components/Partners';
 import ContactUs from '@components/ContactUs';
 import Footer from '@components/Footer';
 import ProductIntro from '@components/ProductIntro';
@@ -54,6 +54,17 @@ export default () => {
   ];
   const scenarios = [{ img: '', text: '' }];
 
+  const prefix = '/static/srPlatform/partners';
+  const partners = [
+    { img: `${prefix}/1.png`, text: '大海集团' },
+    { img: `${prefix}/2.png`, text: '山东大厦' },
+    { img: `${prefix}/3.png`, text: '上海机场' },
+    { img: `${prefix}/4.png`, text: '白云机场' },
+    { img: `${prefix}/5.png`, text: '山东高速' },
+    { img: `${prefix}/6.png`, text: '富春控股' },
+    { img: `${prefix}/7.png`, text: '首都机场' },
+  ];
+
   return (
     <>
       <Head>
@@ -72,7 +83,7 @@ export default () => {
           <ProductIntro {...productIntro} />
           <Products products={products} />
           <Scenarios scenarios={scenarios} />
-          {/* <Partners title="合作客户" partners={partners} /> */}
+          <Partners title="合作客户" partners={partners} />
           <ContactUs />
           <Footer />
         </div>
