@@ -15,6 +15,11 @@ export default function Solutions() {
     centerMode: true,
     centerPadding: '100px',
     slidesToShow: 2,
+    appendDots: dots => (
+      <div>
+        <ul className={styles.slickDots}>{dots}</ul>
+      </div>
+    ),
     responsive: [
       {
         breakpoint: 1480,

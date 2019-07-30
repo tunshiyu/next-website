@@ -39,6 +39,8 @@
       color: @menu-color;
       margin-top: 0;
       border-radius: 0;
+      flex: 1;
+      text-align: center;
 
       :global {
         .rc-menu-item {
@@ -62,7 +64,8 @@
           border-bottom: 0;
           cursor: pointer;
 
-          &-active {
+          &-active,
+          &-selected {
             .active();
           }
 
@@ -99,8 +102,20 @@
           }
         }
 
-        .rc-menu-submenu-active {
-          color: @primary-color;
+        .rc-menu-submenu {
+          border-bottom: 0;
+          cursor: pointer;
+
+          &-active,
+          &-selected {
+            .active();
+            color: @primary-color;
+          }
+
+          .rc-menu-submenu-title {
+            background-color: transparent;
+            padding: 20px;
+          }
         }
       }
     }

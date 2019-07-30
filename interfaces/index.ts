@@ -4,9 +4,14 @@
  * @作者: 陈杰
  * @Date: 2019-07-24 18:05:41
  * @LastEditors: 陈杰
- * @LastEditTime: 2019-07-26 11:29:50
+ * @LastEditTime: 2019-07-30 12:05:52
  */
 
+export interface Banner {
+  img: string;
+  text: string;
+  subtext: string;
+}
 /** 轮播图/banner */
 export interface BannerItem {
   text: string;
@@ -35,4 +40,17 @@ export interface PartnerItem {
   img: string;
   text?: string;
   url?: string;
+}
+
+/**产品介绍 */
+export interface ProductItem {
+  img: string;
+  title: string;
+  desc: string;
+}
+
+/**使用场景 */
+export interface ScenarioItem {
+  text: string;
+  img: string;
 }

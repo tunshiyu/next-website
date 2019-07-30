@@ -5,7 +5,7 @@ import Menu, { SubMenu, MenuItem } from 'rc-menu';
 import Link from 'next/link';
 import LinkButton from '@components/LinkButton';
 
-export default function Header() {
+export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }) {
   const [scrollCls, changeScrollCls] = useState('');
 
   function doScroll() {
@@ -40,7 +40,7 @@ export default function Header() {
             className={styles.logo}
           />
         </Link>
-        <Menu mode="horizontal" className={styles.menu} selectedKeys={['1']}>
+        <Menu mode="horizontal" className={styles.menu} selectedKeys={selectedKeys}>
           <MenuItem key="1">
             <Link href="/homepage">
               <a>首页</a>
@@ -59,7 +59,7 @@ export default function Header() {
             popupClassName={styles.popupMenu}
           >
             <MenuItem key="2-1">
-              <Link href="/homepage">
+              <Link href="/srPlatform">
                 <a>数融平台</a>
               </Link>
             </MenuItem>

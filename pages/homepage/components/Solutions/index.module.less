@@ -46,30 +46,9 @@
   }
 }
 
-:global {
-  .slick-dots {
-    bottom: -70px;
+ul.slickDots {
+  margin: 0;
+  transform: translateY(50px);
 
-    li {
-      width: 72px;
-      height: 8px;
-      background: rgba(255, 255, 255, 0.3);
-
-      &.slick-active {
-        width: 72px;
-        height: 8px;
-        background: #207AF2;
-      }
-
-      button {
-        width: 100%;
-        height: 100%;
-        background: transparent;
-
-        &::before {
-          display: none;
-        }
-      }
-    }
-  }
+  .slick();
 }

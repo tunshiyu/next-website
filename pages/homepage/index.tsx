@@ -49,7 +49,7 @@ export default function Homepage() {
       title: '数融平台',
       subtitle: '极简灵活的一站式大数据平台',
       description: '数融平台包含数据集成、开发、运维、安全，迅速搭建企业自身数据资产平台',
-      url: '/',
+      url: '/srPlatform',
     },
     {
       img: '/static/homepage/services/product2@2x.png',
@@ -119,7 +119,7 @@ export default function Homepage() {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header />
+          <Header selectedKeys={['1']} />
           <Banner banners={banners} />
           <Advantages advantages={advantages} />
           <ProductService services={services} />
