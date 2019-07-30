@@ -64,7 +64,7 @@ export default function Homepage() {
       subtitle: '场景化垂直化的智能组件平台',
       description:
         '涉及工业、物流、供应链、金融领域的视频结构化分析、文本分析等智能分析组件，可快速构建企业的智能应用',
-      url: '/',
+      url: '/srIntel',
     },
   ];
   const prefix = '/static/homepage/partners';

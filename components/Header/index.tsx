@@ -69,7 +69,7 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
               </Link>
             </MenuItem>
             <MenuItem key="2-3">
-              <Link href="/homepage">
+              <Link href="/srIntel">
                 <a>数融智能</a>
               </Link>
             </MenuItem>
