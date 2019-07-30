@@ -64,7 +64,7 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
               </Link>
             </MenuItem>
             <MenuItem key="2-2">
-              <Link href="/homepage">
+              <Link href="/srCube">
                 <a>数融魔方</a>
               </Link>
             </MenuItem>
