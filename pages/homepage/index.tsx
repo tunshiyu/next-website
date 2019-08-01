@@ -56,7 +56,7 @@ export default function Homepage() {
       title: '数融魔方',
       subtitle: '灵活简便的数据应用平台',
       description: '包含可视化分析、建模、API等，迅速实现企业商业智能分析',
-      url: '/',
+      url: '/srCube',
     },
     {
       img: '/static/homepage/services/product3@2x.png',
