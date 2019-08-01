@@ -202,7 +202,7 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
             </Link>
           </MenuItem>
         </Menu>
-        <LinkButton text="立即咨询" href="/homepage" className={styles.btn} />
+        <LinkButton type="primary" text="立即咨询" href="/homepage" className={styles.btn} />
       </div>
     </div>
   );
