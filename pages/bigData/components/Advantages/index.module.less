@@ -1,0 +1,31 @@
+@import '../../../../styles/mixin';
+
+.container {
+  .container();
+
+  .header {
+    .header();
+  }
+
+  .body {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-gap: 80px;
+    justify-content: center;
+
+    .advantage {
+
+      .img {
+        width: 120px;
+        margin: 0 auto 30px;
+      }
+
+      .text {
+        color: @title-color;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
+  }
+}

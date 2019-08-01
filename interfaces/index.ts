@@ -4,13 +4,13 @@
  * @作者: 陈杰
  * @Date: 2019-07-24 18:05:41
  * @LastEditors: 陈杰
- * @LastEditTime: 2019-07-30 12:05:52
+ * @LastEditTime: 2019-07-31 22:25:29
  */
 
 export interface Banner {
   img: string;
   text: string;
-  subtext: string;
+  subtext?: string;
 }
 /** 轮播图/banner */
 export interface BannerItem {
@@ -53,4 +53,12 @@ export interface ProductItem {
 export interface ScenarioItem {
   text: string;
   img: string;
+}
+
+/**方案介绍 */
+export interface SolutionItem {
+  img: string;
+  text: string;
+  subtext?: string;
+  href?: string;
 }

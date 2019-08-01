@@ -3,22 +3,23 @@ import classnames from 'classnames';
 import Link from 'next/link';
 import styles from './index.module.less';
 
-export default function LinkButton({
-  text,
-  href,
-  className,
-  onClick,
-}: {
+interface LinkButtonProps {
   text: string;
   href: string;
   className?: React.CSSProperties;
   onClick?: () => void;
-}) {
-  return (
-    <Link href={href}>
-      <a className={classnames(styles.link, className)} onClick={onClick}>
-        {text}
-      </a>
-    </Link>
-  );
+  type: string;
 }
+
+const LinkButton: React.FC<LinkButtonProps> = ({ text, href, className, onClick, type }) => (
+  <Link href={href}>
+    <a className={classnames(styles[type], className)} onClick={onClick}>
+      {text}
+    </a>
+  </Link>
+);
+LinkButton.defaultProps = {
+  type: 'primary',
+};
+
+export default LinkButton;

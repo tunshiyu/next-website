@@ -19,7 +19,12 @@ export default function ProductService({ services }: { services: ProductServiceI
               <div className={styles.title}>{service.title}</div>
               <div className={styles.subtitle}>{service.subtitle}</div>
               <div className={styles.desc}>{service.description}</div>
-              <LinkButton text="了解详情" href={service.url} className={styles.link} />
+              <LinkButton
+                type="primary"
+                text="了解详情"
+                href={service.url}
+                className={styles.link}
+              />
             </div>
           </div>
         ))}
