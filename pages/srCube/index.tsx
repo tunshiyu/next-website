@@ -13,7 +13,7 @@ import Scenarios from '@components/Scenarios';
 
 export default () => {
   const banner = {
-    img: '/static/srPlatform/banner@2x.png',
+    img: '/static/srCube/banner@2x.png',
     text: '数融魔方',
     subtext: '灵活简便的数据应用平台',
   };
