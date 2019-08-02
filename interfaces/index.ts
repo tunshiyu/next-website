@@ -4,7 +4,7 @@
  * @作者: 陈杰
  * @Date: 2019-07-24 18:05:41
  * @LastEditors: 陈杰
- * @LastEditTime: 2019-07-31 22:25:29
+ * @LastEditTime: 2019-08-02 19:15:42
  */
 
 export interface Banner {
@@ -61,4 +61,11 @@ export interface SolutionItem {
   text: string;
   subtext?: string;
   href?: string;
+}
+
+/**主要产品 */
+export interface MajorProductItem {
+  img: string;
+  title: string;
+  subtitle: string;
 }

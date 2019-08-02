@@ -11,28 +11,28 @@ import Platform from '@components/Platform';
 import Architecture from '@components/Architecture';
 import Partners from '@components/Partners';
 
-export default function SmartPark() {
+export default function SmartChain() {
   const banner = {
-    img: '/static/smartPack/banner@2x.png',
-    text: '智慧园区解决方案',
+    img: '/static/smartChain/banner@2x.png',
+    text: '智慧供应链解决方案',
   };
-  const prefix = '/static/smartPack/solutions';
+  const prefix = '/static/smartChain/solutions';
   const solutions = [
     {
       img: `${prefix}/优势1@2x.png`,
-      text: '智慧园区解决方案总集成',
+      text: '智慧供应链解决方案总集成',
     },
     {
       img: `${prefix}/优势2@2x.png`,
-      text: '园区全场景智能化运营',
+      text: '供应链全流程场景的智能化运营',
     },
     {
       img: `${prefix}/优势3@2x.png`,
-      text: '多技术结合共同赋能园区生态',
+      text: '多技术结合共同赋能供应链',
     },
   ];
   const partners = [
-    { img: '/static/smartPack/partners/鹊华集团@2x.png', text: '鹊华集团', url: '/' },
+    { img: '/static/smartChain/partners/16富春@2x.png', text: '富春控股', url: '/' },
   ];
   const platform = {
     title: '数融平台',
@@ -53,14 +53,14 @@ export default function SmartPark() {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header selectedKeys={['3-3']} />
+          <Header selectedKeys={['3-4']} />
           <Banner banner={banner} />
           <SolutionIntro
             solutions={solutions}
-            subtitle="大数据+SaaS化仓储物流管理软件+ 智能硬件+智能算法+可视化+供应链金融科技"
-            desc="打通园区数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧园区平台，智能化运营园区，提高园区管理效率，并通过供应链金融激活园区高效发展"
+            subtitle="大数据+SaaS化仓储物流管理软件+ 智能硬件+智能算法+可视化+供应链金融"
+            desc="打通供应链数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术， 构建智慧供应链平台，实现供应链智能化运营，并通过供应链金融激活供应链高效发展"
           />
-          <Architecture img="/static/smartPack/architecture.png" />
+          <Architecture img="/static/smartChain/architecture.png" />
           <Partners partners={partners} title="合作客户" />
           <Platform {...platform} />
           <ContactUs />
