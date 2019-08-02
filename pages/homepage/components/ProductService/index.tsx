@@ -4,7 +4,7 @@ import styles from './index.module.less';
 import { ProductServiceItem } from 'interfaces';
 import LinkButton from '@components/LinkButton';
 
-export default function ProductService({ services }: { services: ProductServiceItem[] }) {
+export default function ProductService({ services = [] }: { services: ProductServiceItem[] }) {
   return (
     <div className={styles.container}>
       <div className={styles.header}>产品服务</div>

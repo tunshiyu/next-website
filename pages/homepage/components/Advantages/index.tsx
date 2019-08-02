@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.less';
 import { AdvantageItem } from 'interfaces';
 
-export default function Advantages({ advantages }: { advantages: AdvantageItem[] }) {
+export default function Advantages({ advantages = [] }: { advantages: AdvantageItem[] }) {
   return (
     <div className={styles.container}>
       <div className={styles.header}>雷数优势</div>

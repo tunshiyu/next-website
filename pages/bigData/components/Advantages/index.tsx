@@ -5,7 +5,7 @@ interface AdvantageItem {
   img: string;
   texts: string[];
 }
-export default function Advantages({ advantages }: { advantages: AdvantageItem[] }) {
+export default function Advantages({ advantages = [] }: { advantages: AdvantageItem[] }) {
   return (
     <div className={styles.container}>
       <div className={styles.header}>方案优势</div>
