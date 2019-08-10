@@ -26,10 +26,21 @@ const Layout: React.FC = props => {
           -ms-overflow-style: none;
           height: 100%;
           width: calc(100vw + 18px);
-          overflow: auto;
+          overflow-y: auto;
+          overflow-x: hidden;
         }
         img {
           display: block;
+        }
+        @media screen and (min-width: 1280px) {
+          html {
+            font-size: 14px;
+          }
+        }
+        @media screen and (max-width: 1280px) {
+          html {
+            font-size: 12px;
+          }
         }
       `}</style>
       {props.children}

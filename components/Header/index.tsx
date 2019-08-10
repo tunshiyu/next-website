@@ -42,9 +42,11 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
         </Link>
         <Menu mode="horizontal" className={styles.menu} selectedKeys={selectedKeys}>
           <MenuItem key="1">
-            <Link href="/homepage">
-              <a>首页</a>
-            </Link>
+            <div className={styles.linkWrap}>
+              <Link href="/homepage">
+                <a>首页</a>
+              </Link>
+            </div>
           </MenuItem>
           <SubMenu
             title={
@@ -168,38 +170,19 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
               </Link>
             </MenuItem>
           </SubMenu>
-          <SubMenu
-            title={
-              <span className="submenu-title-wrapper">
-                <span>
-                  合作案例
-                  <i className="iconfont td-arrowdown" />
-                </span>
-              </span>
-            }
-            key="4"
-            popupClassName={styles.popupMenu}
-          >
-            <MenuItem key="4-1">
-              <Link href="/homepage">
-                <a>大海集团</a>
-              </Link>
-            </MenuItem>
-            <MenuItem key="4-2">
-              <Link href="/homepage">
-                <a>山东高速</a>
-              </Link>
-            </MenuItem>
-          </SubMenu>
           <MenuItem key="5">
-            <Link href="/homepage">
-              <a>支持服务</a>
-            </Link>
+            <div className={styles.linkWrap}>
+              <Link href="/homepage">
+                <a>支持服务</a>
+              </Link>
+            </div>
           </MenuItem>
           <MenuItem key="6">
-            <Link href="/homepage">
-              <a>关于雷数</a>
-            </Link>
+            <div className={styles.linkWrap}>
+              <Link href="/homepage">
+                <a>关于雷数</a>
+              </Link>
+            </div>
           </MenuItem>
         </Menu>
         <LinkButton type="primary" text="立即咨询" href="/homepage" className={styles.btn} />
