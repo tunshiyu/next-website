@@ -101,32 +101,32 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
               }
             >
               <MenuItem key="3-1-1">
-                <Link href="/homepage">
+                <Link href="/logistics">
                   <a>物流大数据</a>
                 </Link>
               </MenuItem>
               <MenuItem key="3-1-2">
-                <Link href="/homepage">
+                <Link href="/industry">
                   <a>工业大数据</a>
                 </Link>
               </MenuItem>
               <MenuItem key="3-1-3">
-                <Link href="/homepage">
+                <Link href="/supplyChain">
                   <a>供应链大数据</a>
                 </Link>
               </MenuItem>
               <MenuItem key="3-1-4">
-                <Link href="/homepage">
+                <Link href="/hotel">
                   <a>酒店大数据</a>
                 </Link>
               </MenuItem>
               <MenuItem key="3-1-5">
-                <Link href="/homepage">
+                <Link href="/smartCity">
                   <a>智慧城市</a>
                 </Link>
               </MenuItem>
               <MenuItem key="3-1-6">
-                <Link href="/homepage">
+                <Link href="/airplane">
                   <a>机场大数据</a>
                 </Link>
               </MenuItem>
@@ -143,44 +143,51 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
                 </span>
               }
             >
-              <MenuItem key="3-2-1">
+              {/* <MenuItem key="3-2-1">
                 <Link href="/homepage">
                   <a>融资租赁金融科技</a>
                 </Link>
-              </MenuItem>
+              </MenuItem> */}
               <MenuItem key="3-2-2">
                 <Link href="/homepage">
                   <a>供应链金融科技</a>
                 </Link>
               </MenuItem>
               <MenuItem key="3-2-3">
-                <Link href="/homepage">
+                <Link href="/finTech">
                   <a>物流金融科技</a>
                 </Link>
               </MenuItem>
             </SubMenu>
             <MenuItem key="3-3">
-              <Link href="/homepage">
+              <Link href="/smartPark">
                 <a>智慧园区解决方案</a>
               </Link>
             </MenuItem>
             <MenuItem key="3-4">
-              <Link href="/homepage">
+              <Link href="/smartChain">
                 <a>智慧供应链解决方案解决方案</a>
               </Link>
             </MenuItem>
           </SubMenu>
-          <MenuItem key="5">
+          {/* <MenuItem key="5">
             <div className={styles.linkWrap}>
               <Link href="/homepage">
                 <a>支持服务</a>
               </Link>
             </div>
-          </MenuItem>
+          </MenuItem> */}
           <MenuItem key="6">
             <div className={styles.linkWrap}>
-              <Link href="/homepage">
+              <Link href="/about">
                 <a>关于雷数</a>
+              </Link>
+            </div>
+          </MenuItem>
+          <MenuItem key="7">
+            <div className={styles.linkWrap}>
+              <Link href="/recruitment">
+                <a>人才招聘</a>
               </Link>
             </div>
           </MenuItem>
