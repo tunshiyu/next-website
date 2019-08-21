@@ -12,7 +12,7 @@ export default function Partners({ title, partners }: { title: string; partners:
           partners.map((partner, index) => {
             if (partner.url) {
               return (
-                <Link key={index}>
+                <Link key={index} href="">
                   <a>
                     <img className={styles.img} src={partner.img} alt={partner.text || ''} />
                   </a>
