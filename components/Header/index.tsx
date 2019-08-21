@@ -1,3 +1,14 @@
+/*
+ * @文件描述:header
+ * @ 属性 :
+ * selectedKeys:active的参照,值为菜单对应的key
+ * notScrollToTop: 有些情况不触发跳到顶部，则传该属性
+ * @公司: thundersdata
+ * @作者: 陈杰
+ * @Date: 2019-08-20 19:05:22
+ * @LastEditors: 于效仟
+ * @LastEditTime: 2019-08-21 11:28:11
+ */
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.less';
 import classnames from 'classnames';
@@ -5,7 +16,13 @@ import Menu, { SubMenu, MenuItem } from 'rc-menu';
 import Link from 'next/link';
 import LinkButton from '@components/LinkButton';
 
-export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }) {
+export default function Header({
+  selectedKeys = [],
+  notScrollToTop,
+}: {
+  selectedKeys: string[];
+  notScrollToTop?: boolean;
+}) {
   const [scrollCls, changeScrollCls] = useState('');
 
   function doScroll() {
@@ -19,7 +36,7 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
   }
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    !notScrollToTop && window.scrollTo(0, 0);
   });
 
   useEffect(() => {

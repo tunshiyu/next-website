@@ -13,7 +13,7 @@
     "eslint": "eslint . --ext .ts,.tsx",
     "eslint:fix": "eslint . --fix --ext .ts,.tsx",
     "lint": "prettier --check",
-    "lint:fix": "prettier --write --config .prettierrc.js pages/**/*.tsx components/**/*.tsx",
+    "lint:fix": "prettier --write --config .prettierrc.js pages/**/*.tsx components/**/*.tsx constant.ts",
     "test": "jest --color --passWithNoTests",
     "test:watch": "jest --watch --updateSnapshot",
     "test:coverage": "jest --coverage"
