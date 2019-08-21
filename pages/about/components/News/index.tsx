@@ -10,7 +10,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 16:18:31
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-21 16:39:12
+ * @LastEditTime: 2019-08-21 19:51:21
  */
 import React from 'react';
 import styles from './index.module.less';
@@ -33,25 +33,23 @@ export default function News(props: NewsDataProps) {
       <div className={styles.titleText}>公司新闻</div>
       <div className={styles.newsWrap}>
         {props.options &&
-          props.options.map((option: NewsData, index) => {
-            return (
-              <div key={index} className={styles.newsCard}>
-                <img
-                  src={option.imgUrl}
-                  alt=""
-                  className={styles.img}
-                  onClick={() => {
-                    Router.push({
-                      pathname: '/newsDetail',
-                      query: { newsId: option.newsId },
-                    });
-                  }}
-                />
-                <div className={styles.title}>{option.title}</div>
-                <div className={styles.time}>{option.time}</div>
-              </div>
-            );
-          })}
+          props.options.map((option: NewsData, index) => (
+            <div key={index} className={styles.newsCard}>
+              <img
+                src={option.imgUrl}
+                alt=""
+                className={styles.img}
+                onClick={() => {
+                  Router.push({
+                    pathname: '/newsDetail',
+                    query: { newsId: option.newsId },
+                  });
+                }}
+              />
+              <div className={styles.title}>{option.title}</div>
+              <div className={styles.time}>{option.time}</div>
+            </div>
+          ))}
       </div>
     </>
   );

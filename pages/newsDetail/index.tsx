@@ -5,7 +5,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 19:31:58
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-21 19:36:48
+ * @LastEditTime: 2019-08-21 19:43:58
  */
 import React from 'react';
 import styles from './index.module.less';
@@ -21,7 +21,7 @@ const text = (
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;10月25日，经过5个多月的激烈角逐，由阿里巴巴创新中心、杭州未来科技城管委会、良仓加速器共同举办的“2018阿里巴巴诸神之战全球创客大赛浙江赛区总决赛”在梦想小镇吹响争夺「浙江战神」的号角，经一天精彩对决，本次大赛圆满收官。
     </p>
-    <img src="/static/news/新闻详情-mobile.png" alt="" />
+    <img src="/static/news/newsDetail.png" alt="" />
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;杭州未来科技城管委会招商局局长李洁、阿里巴巴集团总裁办总监马力骏等领导出席了本次大赛；复星投资、厚达资本、赛伯乐投资、宁波基石投资、和梓基金、金库资本、苑博资本、凯昇资本、海德资本、科发资本、元禾原点、沃富金信、阿米巴资本、良米基金、前海合一资本应邀担任本次总决赛评委。
     </p>
