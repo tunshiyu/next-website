@@ -7,7 +7,8 @@ export default function Partners({ title, partners }: { title: string; partners:
   return (
     <div className={styles.container}>
       <div className={styles.header}>{title}</div>
-      <div className={styles.content}>
+      {/* 当合作伙伴小于7个时，使用居中布局 */}
+      <div className={partners.length < 7 ? styles.oneLinecontent : styles.content}>
         {partners.length > 0 &&
           partners.map((partner, index) => {
             if (partner.url) {

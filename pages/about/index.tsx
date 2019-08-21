@@ -7,6 +7,7 @@ import ContactUs from '@components/ContactUs';
 import Footer from '@components/Footer';
 import Advantage from './components/Advantage';
 import Journey from './components/Journey';
+import News from './components/News';
 
 export default function About() {
   const advantages = [
@@ -26,6 +27,27 @@ export default function About() {
       subtitle: '涵盖能源、制造、医疗、政务、 机场、酒店、地产等行业',
     },
   ];
+  // 公司新闻
+  const newsOptions = [
+    {
+      imgUrl: '/static/news/newsDetail.png',
+      title: '雷数科技荣获阿里巴巴诸神之战浙江赛区冠军',
+      time: '2018-12-12',
+      newsId: 1,
+    },
+    {
+      imgUrl: '/static/news/newsDetail.png',
+      title: '雷数科技荣获阿里巴巴诸神之战浙江赛区冠军',
+      time: '2018-12-12',
+      newsId: 1,
+    },
+    {
+      imgUrl: '/static/news/newsDetail.png',
+      title: '雷数科技荣获阿里巴巴诸神之战浙江赛区冠军',
+      time: '2018-12-12',
+      newsId: 1,
+    },
+  ];
   return (
     <>
       <Head>
@@ -43,6 +65,8 @@ export default function About() {
           <img src="/static/about/banner@2x.png" alt="关于雷数" style={{ width: '100%' }} />
           <Advantage advantages={advantages} />
           <Journey />
+          {/* 公司新闻 */}
+          <News options={newsOptions} />
           <ContactUs />
           <Footer />
         </div>
