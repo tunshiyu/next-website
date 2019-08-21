@@ -4,7 +4,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 10:55:51
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-21 10:56:25
+ * @LastEditTime: 2019-08-21 14:01:47
  */
 import React, { useState } from 'react';
 import styles from './index.module.less';
@@ -32,9 +32,9 @@ export default function Drawer(props: DrawerProps) {
         </div>
         <span className={styles.symbol}>
           {opened ? (
-            <IoIosArrowUp size={20} color={'#666666'} onClick={() => toggleOpen(!opened)} />
+            <IoIosArrowUp size={20} color="#666666" onClick={() => toggleOpen(!opened)} />
           ) : (
-            <IoIosArrowDown size={20} color={'#666666'} onClick={() => toggleOpen(!opened)} />
+            <IoIosArrowDown size={20} color="#666666" onClick={() => toggleOpen(!opened)} />
           )}
         </span>
       </div>

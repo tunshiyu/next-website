@@ -4,9 +4,9 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 10:47:17
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-21 10:49:27
+ * @LastEditTime: 2019-08-21 13:59:21
  */
-export const technicals = [
+export const TECHNICALS = [
   {
     position: '后端开发技术工程师',
     conditions: '杭州 | 经验不限 | 本科',
@@ -113,7 +113,7 @@ export const technicals = [
     ],
   },
 ];
-export const products = [
+export const PRODUCTS = [
   {
     position: '互联网产品经理',
     conditions: '杭州 | 3-5年 | 本科',
@@ -161,7 +161,7 @@ export const products = [
     ],
   },
 ];
-export const designs = [
+export const DESIGNS = [
   {
     position: 'UI设计师',
     conditions: '杭州 | 3-5年 | 本科',
@@ -182,7 +182,7 @@ export const designs = [
     ],
   },
 ];
-export const operatings = [
+export const OPERATINGS = [
   {
     position: '运营专员',
     conditions: '杭州 | 3-5年 | 本科',

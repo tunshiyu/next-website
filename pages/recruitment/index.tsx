@@ -4,7 +4,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-20 19:05:23
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-21 11:28:26
+ * @LastEditTime: 2019-08-21 14:00:29
  */
 import React, { useState } from 'react';
 import styles from './index.module.less';
@@ -15,7 +15,7 @@ import ContactUs from '@components/ContactUs';
 import Footer from '@components/Footer';
 import Banner from '@components/Banner';
 import Drawer from '@components/Drawer';
-import { technicals, products, designs, operatings } from '../../constant';
+import { TECHNICALS, PRODUCTS, DESIGNS, OPERATINGS } from '../../constant';
 
 export default function Recruitment() {
   const banner = {
@@ -23,7 +23,7 @@ export default function Recruitment() {
     text: '人才招聘',
   };
   // 全部职位
-  const all = technicals.concat(products, designs, operatings);
+  const all = TECHNICALS.concat(PRODUCTS, DESIGNS, OPERATINGS);
   const btnNodes = [
     {
       text: '全部',
@@ -31,19 +31,19 @@ export default function Recruitment() {
     },
     {
       text: '技术类',
-      node: technicals,
+      node: TECHNICALS,
     },
     {
       text: '产品类',
-      node: products,
+      node: PRODUCTS,
     },
     {
       text: '设计类',
-      node: designs,
+      node: DESIGNS,
     },
     {
       text: '运营类',
-      node: operatings,
+      node: OPERATINGS,
     },
   ];
   const [activeKey, handleActiveKey] = useState(0);
@@ -85,9 +85,9 @@ export default function Recruitment() {
               </div>
             </div>
             {/* 招聘岗位-抽屉模块 */}
-            {data.map((item, index) => {
-              return <Drawer key={index} {...item} />;
-            })}
+            {data.map((item, index) => (
+              <Drawer key={index} {...item} />
+            ))}
           </div>
           <ContactUs />
           <Footer />
