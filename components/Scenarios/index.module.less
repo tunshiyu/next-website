@@ -1,5 +1,10 @@
 @import '../../styles/mixin';
 
+// 图片宽度
+@width: 300px;
+// 右侧btn宽度
+@btnWidth: 40px;
+
 .container {
   background-image: url('/static/srPlatform/scenarios/background@2x.png');
   background-size: cover;
@@ -12,5 +17,92 @@
     padding: 80px 0;
     text-align: center;
     color: white;
+  }
+
+  .wrap {
+    width: @width*5+@btnWidth;
+    margin: 0 auto;
+    height: 500px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+
+    .list {
+      width: @width*7+@btnWidth;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      float: left;
+      list-style: none;
+      transition: transform 1s;
+
+      li {
+        height: 100%;
+        width: @width;
+        float: left;
+        transition: background-size 3s;
+        background-size: 400px 500px;
+        background-position: center center;
+        line-height: 500px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 400;
+        color: #000000;
+
+
+        &:hover {
+          background-size: 200% 150%;
+          opacity: 0.8;
+        }
+
+        &:nth-child(1) {
+          background-image: url('/static/product_sliderImgs/1.jpg');
+        }
+
+        &:nth-child(2) {
+          background-image: url('/static/product_sliderImgs/2.jpg');
+        }
+
+        &:nth-child(3) {
+          background-image: url('/static/product_sliderImgs/3.jpg');
+
+        }
+
+        &:nth-child(4) {
+          background-image: url('/static/product_sliderImgs/4.jpg');
+        }
+
+        &:nth-child(5) {
+          background-image: url('/static/product_sliderImgs/5.jpg');
+        }
+
+        &:nth-child(6) {
+          background-image: url('/static/product_sliderImgs/6.jpg');
+        }
+
+        &:nth-child(7) {
+          background-image: url('/static/product_sliderImgs/7.jpg');
+        }
+      }
+    }
+
+    .btn {
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: @btnWidth;
+      background-image: url('/static/product_sliderImgs/sprite.png');
+    }
+
+    .btnLeft {
+      .btn();
+      background-position: -0px -200px;
+    }
+
+    .btnRight {
+      .btn();
+      background-position: -44px -200px;
+    }
   }
 }

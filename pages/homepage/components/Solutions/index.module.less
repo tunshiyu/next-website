@@ -1,10 +1,39 @@
 @import '../../../../styles/mixin';
 
+
+.onePicWrap {
+  left: 50%;
+  margin-left: -480px;
+  height: 480px;
+  width: 100%;
+
+}
+
+@media screen and (max-width: 1600px) {
+  .img {
+    width: 750px !important;
+    height: 420px !important;
+  }
+
+  .onePicWrap {
+    left: 50%;
+    margin-left: -394px !important;
+    height: 480px;
+    width: 100%;
+
+  }
+}
+
 .container {
   background-image: url(/static/homepage/solutions/background@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 120px;
+
+  .img {
+    width: 960px;
+    height: 480px;
+  }
 
   .header {
     .header();

@@ -3,49 +3,38 @@
  * @公司: thundersdata
  * @作者: 陈杰
  * @Date: 2019-07-30 11:59:39
- * @LastEditors: 陈杰
- * @LastEditTime: 2019-07-30 13:38:17
+ * @LastEditors: 于效仟
+ * @LastEditTime: 2019-08-23 17:23:12
  */
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './index.module.less';
-import { ScenarioItem } from 'interfaces';
-import Slider, { Settings } from 'react-slick';
 
-export default function Scenarios({ scenarios }: { scenarios: ScenarioItem[] }) {
-  const settings: Settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    centerMode: true,
-    centerPadding: '100px',
-    slidesToShow: 2,
-    appendDots: dots => (
-      <div>
-        <ul className={styles.slickDots}>{dots}</ul>
-      </div>
-    ),
-    responsive: [
-      {
-        breakpoint: 1480,
-        settings: {
-          centerPadding: '280px',
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
+export default function Scenarios() {
+  const [flag, handleFlag] = useState(true);
+  // 点击按钮滑动距离
+  const slideDistance = '525px';
+  function slide() {
+    if (flag) {
+      document.getElementById('slideList')!.style.transform = `translateX(-${slideDistance})`;
+    } else {
+      document.getElementById('slideList')!.style.transform = 'translateX(0)';
+    }
+    handleFlag(!flag);
+  }
   return (
     <div className={styles.container}>
       <div className={styles.header}>使用场景</div>
-      <div className={styles.body}>
-        <Slider {...settings}>
-          {scenarios.map((scenario, index) => (
-            <div key={index}>
-              <img src={scenario.img} alt={scenario.text} />
-            </div>
-          ))}
-        </Slider>
+      <div className={styles.wrap}>
+        <ul className={styles.list} id="slideList">
+          <li>物流</li>
+          <li>工业</li>
+          <li>供应链</li>
+          <li>酒店</li>
+          <li>智慧城市</li>
+          <li>机场</li>
+          <li>光伏系能源</li>
+        </ul>
+        <div className={flag ? styles.btnLeft : styles.btnRight} onClick={slide}></div>
       </div>
     </div>
   );

@@ -52,7 +52,6 @@ export default () => {
         '以数据搜索为基础，辅以强大的表使用说明、数据类目、数据血缘、字段血缘等工具，帮助数据表的使用者和拥有者们更好地管理数据、协作开发。',
     },
   ];
-  const scenarios = [{ img: '', text: '' }];
 
   const prefix = '/static/srPlatform/partners';
   const partners = [
@@ -82,7 +81,7 @@ export default () => {
           <Banner banner={banner} />
           <ProductIntro {...productIntro} />
           <Products products={products} />
-          <Scenarios scenarios={scenarios} />
+          <Scenarios />
           <Partners title="合作客户" partners={partners} />
           <ContactUs />
           <Footer />

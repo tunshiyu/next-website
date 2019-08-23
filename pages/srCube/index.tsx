@@ -33,7 +33,6 @@ export default () => {
       desc: '智能算法建模，传统企业也可以使用的人工智能',
     },
   ];
-  const scenarios = [{ img: '', text: '' }];
 
   const prefix = '/static/srCube/partners';
   const partners = [
@@ -63,7 +62,7 @@ export default () => {
           <Banner banner={banner} />
           <ProductIntro {...productIntro} />
           <Products products={products} />
-          <Scenarios scenarios={scenarios} />
+          <Scenarios />
           <Partners title="合作客户" partners={partners} />
           <ContactUs />
           <Footer />

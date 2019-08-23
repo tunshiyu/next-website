@@ -65,7 +65,6 @@ export default () => {
         '基于用户数据通过分析算法构建用户标签体系，提供用户特征标签，迅速对客户、供应商、仓库、机场等主体的智能化标签圈选搜索',
     },
   ];
-  const scenarios = [{ img: '', text: '' }];
 
   const prefix = '/static/srCube/partners';
   const partners = [
@@ -95,7 +94,7 @@ export default () => {
           <Banner banner={banner} />
           <ProductIntro {...productIntro} />
           <Products products={products} />
-          <Scenarios scenarios={scenarios} />
+          <Scenarios />
           <Partners title="合作客户" partners={partners} />
           <ContactUs />
           <Footer />
