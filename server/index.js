@@ -3,8 +3,8 @@
  * @公司: thundersdata
  * @作者: 陈杰
  * @Date: 2019-08-08 18:25:50
- * @LastEditors: 陈杰
- * @LastEditTime: 2019-08-08 18:34:53
+ * @LastEditors: 于效仟
+ * @LastEditTime: 2019-08-26 13:10:50
  */
 const express = require('express');
 const next = require('next');
@@ -17,8 +17,14 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  server.get('/', (req, res) => {
-    res.redirect('/homepage');
+  server.get('/', async (req, res) => {
+    const deviceAgent = req.headers['user-agent'].toLowerCase();
+    const agentID = deviceAgent.match(/(iphone|ipod|ipad|android)/);
+    if (agentID) {
+      res.redirect(301, 'http://m.dev.thundersdata.com/homepage');
+    } else {
+      res.redirect(301, '/homepage');
+    }
   });
 
   server.get('*', (req, res) => {

@@ -4,7 +4,7 @@
  * @作者: 陈杰
  * @Date: 2019-07-30 11:59:39
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-23 17:47:51
+ * @LastEditTime: 2019-08-26 11:16:54
  */
 import React, { useState } from 'react';
 import styles from './index.module.less';
@@ -15,6 +15,7 @@ export default function Scenarios() {
   const slideDistance = '525px';
   // 场景
   const scenarios = ['物流', '工业', '供应链', '酒店', '智慧城市', '机场', '光伏系能源'];
+
   function slide() {
     if (flag) {
       document.getElementById('slideList')!.style.transform = `translateX(-${slideDistance})`;
@@ -29,7 +30,11 @@ export default function Scenarios() {
       <div className={styles.wrap}>
         <ul className={styles.list} id="slideList">
           {scenarios.map((scenario, index) => (
-            <li key={index}>{scenario}</li>
+            <li key={index}>
+              <span className={styles.text} id="text">
+                {scenario}
+              </span>
+            </li>
           ))}
         </ul>
         <div className={flag ? styles.btnLeft : styles.btnRight} onClick={slide}></div>

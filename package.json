@@ -6,7 +6,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "dev": "next",
+    "dev": "node server",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "tsc": "tsc -p ./tsconfig.json",

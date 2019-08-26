@@ -1,7 +1,20 @@
 import React from 'react';
 import Head from 'next/head';
+import styles from './index.less';
 
 const Layout: React.FC = props => {
+  // 平滑滚到顶部函数
+  function handleScrollTop() {
+    let scrollToTop = window.setInterval(function() {
+      let pos = window.pageYOffset;
+      if (pos > 0) {
+        window.scrollTo(0, pos - 50);
+      } else {
+        window.clearInterval(scrollToTop);
+      }
+    }, 2);
+  }
+
   return (
     <>
       <Head>
@@ -44,6 +57,19 @@ const Layout: React.FC = props => {
         }
       `}</style>
       {props.children}
+      <ul className={styles.fixedMenu}>
+        <li>
+          <div className={styles.fixedText}>微信咨询</div>
+          <div className={styles.tel}>*******</div>
+        </li>
+        <li>
+          <div className={styles.fixedText}>联系电话</div>
+          <div className={styles.tel}>*******</div>
+        </li>
+        <li onClick={handleScrollTop}>
+          <div className={styles.fixedText}>TOP</div>
+        </li>
+      </ul>
     </>
   );
 };

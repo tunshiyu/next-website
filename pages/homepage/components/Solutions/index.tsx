@@ -36,7 +36,6 @@ export default function Solutions() {
     infinite: true,
     centerMode: true,
     centerPadding: '800px',
-    // slidesToShow: 2,
     appendDots: dots => (
       <div>
         <ul className={styles.slickDots}>{dots}</ul>

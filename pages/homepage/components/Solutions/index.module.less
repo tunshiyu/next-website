@@ -1,11 +1,21 @@
 @import '../../../../styles/mixin';
 
+// 一张图片时清除left保持居中
+.clearLeft {
+  :global {
+    .slick-track {
+      position: relative;
+      left: 0 !important;
+    }
+  }
+}
 
 .onePicWrap {
   left: 50%;
   margin-left: -480px;
   height: 480px;
   width: 100%;
+  .clearLeft();
 
 }
 
@@ -15,12 +25,22 @@
     height: 420px !important;
   }
 
+  .container {
+    :global {
+      .slick-track {
+        position: relative;
+        left: -400px !important;
+      }
+    }
+  }
+
   .onePicWrap {
     left: 50%;
     margin-left: -394px !important;
     height: 480px;
     width: 100%;
 
+    .clearLeft();
   }
 }
 
@@ -29,6 +49,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 120px;
+
+
+  :global {
+    .slick-track {
+      position: relative;
+      left: -470px;
+    }
+  }
 
   .img {
     width: 960px;

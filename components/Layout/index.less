@@ -1,0 +1,43 @@
+.fixedMenu {
+  position: fixed;
+  list-style: none;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  li {
+    height: 100px;
+    margin-bottom: 2px;
+    background-color: #207AF2;
+    color: #fff;
+    font-size: 22px;
+    width: 300px;
+    position: relative;
+    transition: all 1s;
+    transform: translateX(200px);
+    text-align: center;
+    line-height: 100px;
+
+
+    &:nth-child(1):hover {
+      transform: translateX(0px);
+    }
+
+    &:nth-child(2):hover {
+      transform: translateX(0px);
+    }
+  }
+
+  .fixedText {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+  }
+}
