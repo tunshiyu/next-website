@@ -93,6 +93,20 @@
     z-index: 99;
     max-width: 100%;
 
+    // 脱离顶部后文字样式
+    :global {
+      .submenu-title-wrapper {
+        color: #000 !important;
+      }
+
+      .rc-menu-item {
+        a {
+          color: #000 !important;
+        }
+      }
+    }
+
+
     .content {
       position: initial;
       max-width: 1240px;

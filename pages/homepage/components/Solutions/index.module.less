@@ -17,6 +17,10 @@
   width: 100%;
   .clearLeft();
 
+  .bannerText {
+    width: 250%;
+  }
+
 }
 
 @media screen and (max-width: 1600px) {
@@ -41,6 +45,10 @@
     width: 100%;
 
     .clearLeft();
+
+    .bannerText {
+      width: 100%;
+    }
   }
 }
 
@@ -51,6 +59,7 @@
   padding-bottom: 120px;
 
 
+
   :global {
     .slick-track {
       position: relative;
@@ -58,9 +67,30 @@
     }
   }
 
-  .img {
-    width: 960px;
-    height: 480px;
+  .wrap {
+    position: relative;
+
+    .img {
+      width: 960px;
+      height: 480px;
+    }
+
+    .bannerText {
+      position: absolute;
+      left: 0;
+      top: 100px;
+      text-align: center;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 400;
+
+      .content {
+        font-size: 26px;
+        opacity: 0.8;
+        width: 70%;
+        margin: 50px auto 0;
+      }
+    }
   }
 
   .header {

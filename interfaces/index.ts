@@ -3,8 +3,8 @@
  * @公司: thundersdata
  * @作者: 陈杰
  * @Date: 2019-07-24 18:05:41
- * @LastEditors: 陈杰
- * @LastEditTime: 2019-08-02 19:15:42
+ * @LastEditors: 于效仟
+ * @LastEditTime: 2019-08-26 17:41:19
  */
 
 export interface Banner {
@@ -44,9 +44,10 @@ export interface PartnerItem {
 
 /**产品介绍 */
 export interface ProductItem {
-  img: string;
+  img?: string;
   title: string;
   desc: string;
+  hasVideo?: boolean;
 }
 
 /**使用场景 */

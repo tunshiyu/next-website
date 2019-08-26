@@ -4,8 +4,10 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 10:47:17
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-21 13:59:21
+ * @LastEditTime: 2019-08-26 17:16:47
  */
+
+//  下面四个分别是技术,产品,设计,运维岗位的招聘信息配置
 export const TECHNICALS = [
   {
     position: '后端开发技术工程师',
@@ -201,4 +203,91 @@ export const OPERATINGS = [
       '5. 有今日头条、广点通等平台的广告投放、转化提升经验者优先',
     ],
   },
+];
+
+// 解决方案轮播图文案及跳转url配置
+export const BANNERS = [
+  [
+    {
+      keywords: ['物流大数据'],
+      text:
+        '打通物流数据孤岛，构建大数据平台，通过对物流全程的人、车、货、场等物流要素的跟踪监控及预警分析，提高作业效率，降低企业仓储物流成本',
+      url: '/static/sliderImgs/大数据-物流大数据.jpg',
+      linkUrl: '/logisticsBigData',
+    },
+    {
+      keywords: ['工业大数据'],
+      text:
+        '打通工业数据孤岛，构建大数据平台，实现设备状态监控预警、生产参数智能优化、生产大数据实时分析，实现智能生产，帮助生产企业降本增效',
+      url: '/static/sliderImgs/大数据-工业大数据.jpg',
+      linkUrl: '/industrialBigData',
+    },
+    {
+      keywords: ['供应链大数据'],
+      text:
+        '打通供应链数据孤岛，构建大数据平台，通过大数据分析、算法建模、金融科技等技术，优化供应链各个环节，达到降本增效、提升服务质量的（和决策智能）目标',
+      url: '/static/sliderImgs/大数据-供应链大数据.jpg',
+      linkUrl: '/supplyChainBigData',
+    },
+    {
+      keywords: ['酒店大数据'],
+      text:
+        '打通酒店数据孤岛，构建大数据平台，通过大数据分析、标签画像系统、智能硬件等技术，优化酒店各个业务环节，达到降本增效、智能经营的目标',
+      url: '/static/sliderImgs/大数据-酒店大数据.jpg',
+      linkUrl: '/hotelBigData',
+    },
+    {
+      keywords: ['智慧城市'],
+      text:
+        '打通城市数据孤岛，构建大数据平台和共享交换平台，通过大数据分析、精准 扶贫系统、光伏区块链技术，提高城市智能管理能力，并实现可持续运营',
+      url: '/static/sliderImgs/大数据-智慧城市大数据.jpg',
+      linkUrl: '/wisdomCity',
+    },
+    {
+      keywords: ['机场大数据'],
+      text:
+        '打通机场数据孤岛，构建大数据平台，通过大数据分析、智能机场应用、精准画像推荐技术，提高机场的运营管理效率，提升机场客户体验和服务质量',
+      url: '/static/sliderImgs/大数据-机场大数据.jpg',
+      linkUrl: '/airportBigData',
+    },
+  ],
+  [
+    {
+      keywords: ['融资租赁金融科技'],
+      text:
+        '通过大数据、区块链、融资租赁等技术，使线下设备资产上链为安全的数字资产，构建金融科技平台，促进光伏产业发展',
+      url: '/static/sliderImgs/金融科技-融资租赁金融科技.jpg',
+      linkUrl: '',
+    },
+    {
+      keywords: ['供应链金融科技'],
+      text: '通过大数据、区块链、风控建模等技术，盘活企业资产，促进中小企业的融资',
+      url: '/static/sliderImgs/金融科技-供应链金融科技.jpg',
+      linkUrl: '',
+    },
+    {
+      keywords: ['物流金融科技'],
+      text: '通过大数据、区块链、风控建模等技术，盘活企业资产，促进中小企业的融资',
+      url: '/static/sliderImgs/金融科技-物流金融科技.jpg',
+      linkUrl: '',
+    },
+  ],
+  [
+    {
+      keywords: ['智慧园区'],
+      text:
+        '打通园区数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧园区平台，智能化运营园区，提高园区管理效率，并通过供应链金融激活园区高效发展',
+      url: '/static/sliderImgs/智慧园区.jpg',
+      linkUrl: '/gardenSolution',
+    },
+  ],
+  [
+    {
+      keywords: ['金融科技'],
+      text:
+        '打通供应链数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧供应链平台，实现供应链智能化运营，并通过供应链金融激活供应链高效发展',
+      url: '/static/sliderImgs/智慧供应链.jpg',
+      linkUrl: '/supplyChainSolution',
+    },
+  ],
 ];

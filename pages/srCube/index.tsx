@@ -32,6 +32,11 @@ export default () => {
       title: '算法平台',
       desc: '智能算法建模，传统企业也可以使用的人工智能',
     },
+    {
+      hasVideo: true,
+      title: '可视化大屏',
+      desc: '动态交互式可视化大屏，传统企业的作战指挥地图',
+    },
   ];
 
   const prefix = '/static/srCube/partners';
@@ -58,7 +63,7 @@ export default () => {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header selectedKeys={['2-2']} />
+          <Header selectedKeys={['2-2']} notScrollToTop />
           <Banner banner={banner} />
           <ProductIntro {...productIntro} />
           <Products products={products} />
