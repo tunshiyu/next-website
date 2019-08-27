@@ -48,7 +48,7 @@ export default function SmartCity() {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header selectedKeys={['3-4']} />
+          <Header selectedKeys={['3-1-5']} />
           <Banner banner={banner} />
           <SolutionIntro
             solutions={solutions}

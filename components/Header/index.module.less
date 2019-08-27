@@ -168,3 +168,29 @@
     }
   }
 }
+
+// 控制当前所在页面的selected菜单样式
+:global {
+
+  // 三级菜单样式
+  .rc-menu-sub {
+    .rc-menu-item-selected {
+      a {
+        color: @primary-color  !important;
+      }
+    }
+  }
+
+  // 二级菜单样式
+  .rc-menu-submenu {
+    .rc-menu-submenu-selected {
+      i {
+        color: @primary-color ;
+      }
+
+      .submenu-title-wrapper {
+        color: @primary-color ;
+      }
+    }
+  }
+}

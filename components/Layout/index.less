@@ -1,3 +1,5 @@
+@unit: 100px;
+
 .fixedMenu {
   position: fixed;
   list-style: none;
@@ -6,18 +8,19 @@
   transform: translateY(-50%);
 
   li {
-    height: 100px;
+    height: @unit;
     margin-bottom: 2px;
-    background-color: #207AF2;
+    background-color: rgba(32, 122, 242, 0.7);
     color: #fff;
     font-size: 22px;
-    width: 300px;
+    width: 3*@unit;
     position: relative;
     transition: all 1s;
-    transform: translateX(200px);
+    transform: translateX(@unit*2);
     text-align: center;
-    line-height: 100px;
-
+    line-height: @unit;
+    cursor: pointer;
+    border-radius: 30px 0 0 30px;
 
     &:nth-child(1):hover {
       transform: translateX(0px);
@@ -29,15 +32,15 @@
   }
 
   .fixedText {
-    width: 100px;
-    height: 100px;
+    width: @unit;
+    height: @unit;
   }
 
   .tel {
     position: absolute;
     right: 0;
     top: 0;
-    width: 200px;
+    width: 2*@unit;
     height: 100%;
   }
 }

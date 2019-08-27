@@ -48,7 +48,7 @@ export default function Airplane() {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header selectedKeys={['3-4']} />
+          <Header selectedKeys={['3-1-6']} />
           <Banner banner={banner} />
           <SolutionIntro
             solutions={solutions}

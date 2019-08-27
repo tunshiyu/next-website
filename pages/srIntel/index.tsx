@@ -90,7 +90,7 @@ export default () => {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header selectedKeys={['2-2']} />
+          <Header selectedKeys={['2-3']} />
           <Banner banner={banner} />
           <ProductIntro {...productIntro} />
           <Products products={products} />

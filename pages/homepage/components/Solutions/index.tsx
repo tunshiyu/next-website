@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './index.module.less';
-// import Router from 'next/router';
+import Router from 'next/router';
 import classnames from 'classnames';
 import Slider, { Settings } from 'react-slick';
 import { BANNERS } from '../../../../constant';
@@ -11,6 +11,9 @@ export default function Solutions() {
   const banners = BANNERS;
 
   const settings: Settings = {
+    draggable: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
     dots: true,
     arrows: false,
     infinite: true,
@@ -33,6 +36,9 @@ export default function Solutions() {
     ],
   };
   const onePicSettings: Settings = {
+    draggable: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
     dots: true,
     arrows: false,
     infinite: true,
@@ -82,8 +88,7 @@ export default function Solutions() {
               className={styles.wrap}
               key={index}
               onClick={() => {
-                // 暂时保留，跳转的点击触发后面会加到一个文本上
-                // item.linkUrl && Router.push({ pathname: item.linkUrl });
+                item.linkUrl && Router.push({ pathname: item.linkUrl });
               }}
             >
               <img src={item.url} className={styles.img} />

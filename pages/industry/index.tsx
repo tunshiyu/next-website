@@ -54,7 +54,7 @@ export default function Industry() {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header selectedKeys={['3-4']} />
+          <Header selectedKeys={['3-1-2']} />
           <Banner banner={banner} />
           <SolutionIntro
             solutions={solutions}

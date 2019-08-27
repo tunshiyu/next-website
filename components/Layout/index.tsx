@@ -64,7 +64,7 @@ const Layout: React.FC = props => {
         </li>
         <li>
           <div className={styles.fixedText}>联系电话</div>
-          <div className={styles.tel}>*******</div>
+          <div className={styles.tel}>0571-26270118</div>
         </li>
         <li onClick={handleScrollTop}>
           <div className={styles.fixedText}>TOP</div>
