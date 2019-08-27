@@ -7,7 +7,7 @@
  * @作者: 陈杰
  * @Date: 2019-08-20 19:05:22
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-26 17:56:26
+ * @LastEditTime: 2019-08-27 09:41:44
  */
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.less';
@@ -148,7 +148,8 @@ export default function Header({
                 </Link>
               </MenuItem>
             </SubMenu>
-            <SubMenu
+            {/* 金融科技解决方案的子页面暂无完整方案，暂时关闭，只开启父级MenuItem */}
+            {/* <SubMenu
               key="3-2"
               popupClassName={styles.popupMenu}
               expandIcon={
@@ -160,11 +161,11 @@ export default function Header({
                 </span>
               }
             >
-              {/* <MenuItem key="3-2-1">
+              <MenuItem key="3-2-1">
                 <Link href="/homepage">
                   <a>融资租赁金融科技</a>
                 </Link>
-              </MenuItem> */}
+              </MenuItem>
               <MenuItem key="3-2-2">
                 <Link href="/homepage">
                   <a>供应链金融科技</a>
@@ -175,7 +176,12 @@ export default function Header({
                   <a>物流金融科技</a>
                 </Link>
               </MenuItem>
-            </SubMenu>
+            </SubMenu> */}
+            <MenuItem key="3-2">
+              <Link href="/finTech">
+                <a>金融科技解决方案</a>
+              </Link>
+            </MenuItem>
             <MenuItem key="3-3">
               <Link href="/smartPark">
                 <a>智慧园区解决方案</a>
