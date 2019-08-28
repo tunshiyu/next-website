@@ -61,7 +61,7 @@ export default function About() {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header selectedKeys={['6']} />
+          <Header selectedKeys={['6-1']} />
           <img src="/static/about/banner@2x.png" alt="关于雷数" style={{ width: '100%' }} />
           <Advantage advantages={advantages} />
           <Journey />

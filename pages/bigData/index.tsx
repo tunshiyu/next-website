@@ -79,7 +79,7 @@ export default function BigData() {
     title: '数融平台',
     subtitle: '极简灵活的一站式大数据平台',
     img: '/static/bigData/数融平台@2x.png',
-    href: '/homepage',
+    href: '/srPlatform',
   };
   return (
     <>

@@ -24,6 +24,7 @@ const Layout: React.FC = props => {
           type="text/css"
           href="//at.alicdn.com/t/font_1322153_nxxj5gfzvq9.css"
         />
+        <link rel="icon" href="/static/tdlogo.png"></link>
       </Head>
       <style jsx global>{`
         html {

@@ -7,7 +7,7 @@
  * @作者: 陈杰
  * @Date: 2019-08-20 19:05:22
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-28 16:15:24
+ * @LastEditTime: 2019-08-28 17:35:39
  */
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.less';
@@ -203,20 +203,33 @@ export default function Header({
               </Link>
             </div>
           </MenuItem> */}
-          <MenuItem key="6">
-            <div className={styles.linkWrap}>
-              <Link href="/about">
-                <a>关于雷数</a>
-              </Link>
-            </div>
-          </MenuItem>
-          <MenuItem key="7">
-            <div className={styles.linkWrap}>
-              <Link href="/recruitment">
-                <a>人才招聘</a>
-              </Link>
-            </div>
-          </MenuItem>
+          <SubMenu
+            title={
+              <span className="submenu-title-wrapper">
+                <span>
+                  关于雷数
+                  <i className="iconfont td-arrowdown" />
+                </span>
+              </span>
+            }
+            key="6"
+            popupClassName={styles.popupMenu}
+          >
+            <MenuItem key="6-1">
+              <div className={styles.linkWrap}>
+                <Link href="/about">
+                  <a>公司简介</a>
+                </Link>
+              </div>
+            </MenuItem>
+            <MenuItem key="6-2">
+              <div className={styles.linkWrap}>
+                <Link href="/recruitment">
+                  <a>人才招聘</a>
+                </Link>
+              </div>
+            </MenuItem>
+          </SubMenu>
         </Menu>
         <LinkButton type="primary" text="立即咨询" href="/homepage" className={styles.btn} />
       </div>

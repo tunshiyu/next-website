@@ -10,7 +10,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 16:18:31
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-21 19:51:21
+ * @LastEditTime: 2019-08-28 17:13:29
  */
 import React from 'react';
 import styles from './index.module.less';
@@ -28,6 +28,12 @@ export interface NewsDataProps {
 }
 
 export default function News(props: NewsDataProps) {
+  function toNews(newsId: number) {
+    Router.push({
+      pathname: '/newsDetail',
+      query: { newsId: newsId },
+    });
+  }
   return (
     <>
       <div className={styles.titleText}>公司新闻</div>
@@ -39,14 +45,11 @@ export default function News(props: NewsDataProps) {
                 src={option.imgUrl}
                 alt=""
                 className={styles.img}
-                onClick={() => {
-                  Router.push({
-                    pathname: '/newsDetail',
-                    query: { newsId: option.newsId },
-                  });
-                }}
+                onClick={() => toNews(option.newsId)}
               />
-              <div className={styles.title}>{option.title}</div>
+              <div className={styles.title} onClick={() => toNews(option.newsId)}>
+                {option.title}
+              </div>
               <div className={styles.time}>{option.time}</div>
             </div>
           ))}
