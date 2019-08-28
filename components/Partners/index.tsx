@@ -1,5 +1,4 @@
 import React from 'react';
-// import Link from 'next/link';
 import styles from './index.module.less';
 import { PartnerItem } from 'interfaces';
 
@@ -13,11 +12,9 @@ export default function Partners({ title, partners }: { title: string; partners:
           partners.map((partner, index) => {
             if (partner.url) {
               return (
-                // <Link key={index} href="">
-                <a>
+                <a key={index}>
                   <img className={styles.img} src={partner.img} alt={partner.text || ''} />
                 </a>
-                // </Link>
               );
             }
             return (
