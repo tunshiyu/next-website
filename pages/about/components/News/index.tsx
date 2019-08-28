@@ -10,7 +10,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 16:18:31
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-28 17:13:29
+ * @LastEditTime: 2019-08-28 19:20:36
  */
 import React from 'react';
 import styles from './index.module.less';
@@ -31,7 +31,7 @@ export default function News(props: NewsDataProps) {
   function toNews(newsId: number) {
     Router.push({
       pathname: '/newsDetail',
-      query: { newsId: newsId },
+      query: { newsId },
     });
   }
   return (
