@@ -18,7 +18,7 @@
   .clearLeft();
 
   .bannerText {
-    width: 250%;
+    width: 250% !important;
   }
 
 }
@@ -47,7 +47,7 @@
     .clearLeft();
 
     .bannerText {
-      width: 100%;
+      width: 100% !important;
     }
   }
 }
@@ -69,6 +69,7 @@
 
   .wrap {
     position: relative;
+    width: 100%;
 
     .img {
       width: 960px;
@@ -78,18 +79,19 @@
     .bannerText {
       position: absolute;
       left: 0;
-      top: 100px;
+      top: 120px;
       text-align: center;
       color: #fff;
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 400;
+      width: 96%;
 
       .content {
-        font-size: 24px;
+        font-size: 20px;
         opacity: 0.8;
         width: 70%;
         margin: 50px auto 0;
-        line-height: 52px;
+        line-height: 40px;
       }
     }
   }
@@ -112,13 +114,13 @@
       font-size: 24px;
       line-height: 33px;
       cursor: pointer;
+      opacity: 0.5;
 
       &::after {
         content: '|';
         line-height: 33px;
         padding: 0 24px;
         color: white;
-
       }
 
       &:last-child {
@@ -128,7 +130,11 @@
       }
 
       &.active {
-        color: red;
+        opacity: 1;
+
+        &::after {
+          opacity: 0.5;
+        }
       }
     }
   }

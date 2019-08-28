@@ -1,3 +1,5 @@
+// 样式顺序不要调换
+
 @import '../../styles/mixin';
 
 .active() {
@@ -53,7 +55,6 @@
           border-bottom: none;
           padding: 0;
 
-
           a {
             color: @menu-color;
             text-decoration: none;
@@ -95,13 +96,50 @@
 
     // 脱离顶部后文字样式
     :global {
-      .submenu-title-wrapper {
-        color: #000 !important;
+
+      // 被选中的有子菜单的文字的颜色
+      .rc-menu-submenu-selected {
+        .submenu-title-wrapper {
+          color: @primary-color  !important;
+        }
       }
 
+      // 未被选中的带有子菜单的文字的颜色
+      .rc-menu-submenu {
+        .rc-menu-submenu-title {
+          .submenu-title-wrapper {
+            color: #666;
+          }
+        }
+      }
+
+      // 未被选中的没有子菜单的文字的颜色
       .rc-menu-item {
         a {
-          color: #000 !important;
+          color: #666 !important;
+        }
+      }
+
+      // 被选中的没有子菜单的文字的颜色
+      .rc-menu-item-selected {
+        a {
+          color: @primary-color  !important;
+        }
+      }
+
+
+
+      // 鼠标悬浮时带有子菜单的文字的颜色
+      .rc-menu-submenu-active {
+        .submenu-title-wrapper {
+          color: @primary-color  !important;
+        }
+      }
+
+      // 鼠标悬浮时没有子菜单的文字的颜色
+      .rc-menu-item-active {
+        a {
+          color: @primary-color  !important;
         }
       }
     }
@@ -132,7 +170,6 @@
           &-active,
           &-selected {
             .active();
-            color: @primary-color;
           }
 
           .rc-menu-submenu-title {
@@ -172,9 +209,28 @@
 // 控制当前所在页面的selected菜单样式
 :global {
 
+
+  // 鼠标移入子菜单的样式
+  .rc-menu-submenu {
+    .rc-menu-submenu-active {
+      .rc-menu-submenu-title {
+        background-color: rgba(32, 122, 242, 0.2);
+      }
+    }
+  }
+
+  .rc-menu-submenu-selected,
+  .rc-menu-submenu-active {
+    .rc-menu-submenu-title {
+      background-color: transparent !important;
+    }
+  }
+
   // 三级菜单样式
   .rc-menu-sub {
     .rc-menu-item-selected {
+      background-color: transparent !important;
+
       a {
         color: @primary-color  !important;
       }
@@ -184,12 +240,14 @@
   // 二级菜单样式
   .rc-menu-submenu {
     .rc-menu-submenu-selected {
+      background-color: transparent !important;
+
       i {
-        color: @primary-color ;
+        color: @primary-color;
       }
 
       .submenu-title-wrapper {
-        color: @primary-color ;
+        color: @primary-color;
       }
     }
   }

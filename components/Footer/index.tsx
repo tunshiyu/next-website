@@ -7,26 +7,26 @@ export default function Footer() {
     {
       title: '产品中心',
       links: [
-        { url: '/', text: '数融平台' },
-        { url: '/', text: '数融魔方' },
-        { url: '/', text: '数融智能' },
+        { url: '/srPlatform', text: '数融平台' },
+        { url: '/srCube', text: '数融魔方' },
+        { url: '/srIntel', text: '数融智能' },
       ],
     },
     {
       title: '解决方案',
       links: [
-        { url: '/', text: '大数据' },
-        { url: '/', text: '金融科技' },
-        { url: '/', text: '智慧园区' },
-        { url: '/', text: '智慧供应链' },
+        { url: '/bigData', text: '大数据' },
+        { url: '/finTech', text: '金融科技' },
+        { url: '/smartPark', text: '智慧园区' },
+        { url: '/supplyChain', text: '智慧供应链' },
       ],
     },
     {
       title: '关于雷数',
       links: [
-        { url: '/', text: '公司简介' },
-        { url: '/', text: '公司新闻' },
-        { url: '/', text: '人才招聘' },
+        { url: '/about', text: '公司简介' },
+        { url: '/about', text: '公司新闻' },
+        { url: '/recruitment', text: '人才招聘' },
       ],
     },
   ];

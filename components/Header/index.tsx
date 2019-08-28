@@ -7,13 +7,14 @@
  * @作者: 陈杰
  * @Date: 2019-08-20 19:05:22
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-27 09:41:44
+ * @LastEditTime: 2019-08-28 11:42:43
  */
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.less';
 import classnames from 'classnames';
 import Menu, { SubMenu, MenuItem } from 'rc-menu';
 import Link from 'next/link';
+import Router from 'next/router';
 import LinkButton from '@components/LinkButton';
 
 export default function Header({
@@ -113,7 +114,9 @@ export default function Header({
               }
               title={
                 <span className="submenu-title-wrapper">
-                  <span>大数据解决方案</span>
+                  <span onClick={() => Router.push('/bigData')} style={{ cursor: 'pointer' }}>
+                    大数据解决方案
+                  </span>
                 </span>
               }
             >
@@ -189,7 +192,7 @@ export default function Header({
             </MenuItem>
             <MenuItem key="3-4">
               <Link href="/smartChain">
-                <a>智慧供应链解决方案解决方案</a>
+                <a>智慧供应链解决方案</a>
               </Link>
             </MenuItem>
           </SubMenu>
