@@ -67,7 +67,9 @@ export default () => {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>数融平台-雷数科技</title>
+        <meta name="description" content="极简灵活的一站式大数据平台" />
+        <meta name="keywords" content="数据集成,数据开发,数据地图,权限管理,运维监控" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

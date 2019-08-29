@@ -80,7 +80,10 @@ export default () => {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>数融智能-雷数科技</title>
+        <meta name="description" content="场景化垂直化的智能组件平台" />
+        <meta name="keywords" content="画像系统,设备状态监控,视频结构化分析,区块链金融科技" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

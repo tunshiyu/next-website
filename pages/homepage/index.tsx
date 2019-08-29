@@ -100,6 +100,8 @@ export default function Homepage() {
     <>
       <Head>
         <title>杭州雷数科技有限公司</title>
+        <meta name="description" content="杭州雷数科技有限公司首页" />
+        <meta name="keywords" content="大数据,物联网,区块链,金融" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

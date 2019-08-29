@@ -45,7 +45,12 @@ export default function Logistics() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>物流大数据-雷数科技</title>
+        <meta
+          name="description"
+          content="通过对供应链全程的人、车、货、财务等供应链环节的智能管控，提高物流效率，提升服务质量，降低物流成本"
+        />
+        <meta name="keywords" content="大数据,AI,供应链金融,智能硬件" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

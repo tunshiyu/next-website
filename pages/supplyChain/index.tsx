@@ -44,7 +44,12 @@ export default function SupplyChain() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>供应链大数据-雷数科技</title>
+        <meta
+          name="description"
+          content="打通供应链数据孤岛构建大数据平台，从产地、仓库、物流、销售终端全场景的数字化智能化，通过大数据可视化、分析预测、算法建模、金融科技等技术，优化供应链各个环节，达到决策智能、降本增效、提升服务质量的目标"
+        />
+        <meta name="keywords" content="大数据,大数据分析,算法建模,供应链金融科技" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

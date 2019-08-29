@@ -43,7 +43,15 @@ export default function SmartChain() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>智慧供应链解决方案-雷数科技</title>
+        <meta
+          name="description"
+          content="打通供应链数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术， 构建智慧供应链平台，实现供应链智能化运营，并通过供应链金融激活供应链高效发展"
+        />
+        <meta
+          name="keywords"
+          content="大数据,SaaS化仓储物流管理软件,智能硬件,智能算法,可视化,供应链金融科技"
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

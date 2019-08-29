@@ -44,7 +44,12 @@ export default function Industry() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>工业大数据-雷数科技</title>
+        <meta
+          name="description"
+          content="打通工业企业数据孤岛构建大数据平台，实现设备状态监控预警、生产参数优化、大数据实时分析， 帮助工业企业挖掘数据的价值"
+        />
+        <meta name="keywords" content="大数据,AI,物联网,融资租赁" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

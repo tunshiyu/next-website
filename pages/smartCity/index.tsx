@@ -38,7 +38,12 @@ export default function SmartCity() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>智慧城市大数据-雷数科技</title>
+        <meta
+          name="description"
+          content="打通城市数据孤岛，构建大数据平台和共享交换平台，通过大数据分析、精准扶贫系统、光伏区块链技术， 提高城市智能管理能力，并实现可持续运营"
+        />
+        <meta name="keywords" content="大数据,共享交换,分析可视化,精准扶贫,光伏扶贫" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

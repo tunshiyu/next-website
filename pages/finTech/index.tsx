@@ -60,7 +60,9 @@ export default function FinTech() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>金融科技解决方案-雷数科技</title>
+        <meta name="description" content="金融科技解决方案" />
+        <meta name="keywords" content="融资租赁金融科技,供应链金融科技,物流金融科技" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

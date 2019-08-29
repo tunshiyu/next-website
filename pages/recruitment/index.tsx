@@ -4,7 +4,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-20 19:05:23
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-28 17:20:26
+ * @LastEditTime: 2019-08-29 17:41:52
  */
 import React, { useState } from 'react';
 import styles from './index.module.less';
@@ -51,7 +51,8 @@ export default function Recruitment() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>人才招聘-雷数科技</title>
+        <meta name="description" content="人才招聘" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

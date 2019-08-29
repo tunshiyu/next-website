@@ -51,7 +51,15 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>公司简介-雷数科技</title>
+        <meta
+          name="description"
+          content="杭州雷数科技有限公司立于2017年底, 是一家专注于大数据商业智能服务的技术领先型科技公司，由来自微软、阿里等顶尖大数据、人工智能企业的资深互联网专家与行业实战专家共同创立"
+        />
+        <meta
+          name="keywords"
+          content="大数据商业智能服务,顶尖技术团队，高速的业务增长,丰富的行业实践"
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

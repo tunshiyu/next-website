@@ -44,7 +44,12 @@ export default function Hotel() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>酒店大数据-雷数科技</title>
+        <meta
+          name="description"
+          content="打通酒店数据孤岛构建大数据平台，从采购、厨房、餐厅到客房全流程数据化智能化，提高业务流程效率， 降低人力成本，提升服务质量"
+        />
+        <meta name="keywords" content="大数据,AI,智能硬件" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

@@ -5,7 +5,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 19:31:58
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-28 17:24:23
+ * @LastEditTime: 2019-08-29 17:42:27
  */
 import React from 'react';
 import styles from './index.module.less';
@@ -64,7 +64,8 @@ export default class News extends React.Component {
     return (
       <>
         <Head>
-          <title>杭州雷数科技有限公司</title>
+          <title>新闻详情-雷数科技</title>
+          <meta name="description" content="新闻详情" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link
             rel="stylesheet"

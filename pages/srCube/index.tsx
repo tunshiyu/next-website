@@ -53,7 +53,9 @@ export default () => {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>数融魔方-雷数科技</title>
+        <meta name="description" content="灵活简便的数据应用平台" />
+        <meta name="keywords" content="数据分析工具,算法平台,可视化大屏,应用API" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

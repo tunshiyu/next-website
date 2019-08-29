@@ -84,7 +84,12 @@ export default function BigData() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>大数据解决方案-雷数科技</title>
+        <meta name="description" content="大数据解决方案" />
+        <meta
+          name="keywords"
+          content="物流大数据,工业大数据,供应链大数据,酒店大数据,智慧城市,机场大数据"
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

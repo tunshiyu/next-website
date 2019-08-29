@@ -38,7 +38,12 @@ export default function Airplane() {
   return (
     <>
       <Head>
-        <title>杭州雷数科技有限公司</title>
+        <title>机场大数据-雷数科技</title>
+        <meta
+          name="description"
+          content="打通机场数据孤岛，构建大数据平台，通过大数据分析、智能机场应用、精准画像推荐技术，提高机场的运营管理效率，提升机场客户体验和服务质量"
+        />
+        <meta name="keywords" content="大数据,分析可视化,精准推荐,移动应用" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"
