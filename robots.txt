@@ -3,4 +3,4 @@ User-agent: *
 
 Allow: /
 Disallow: /cache/
-Sitemap: 
+Sitemap: https://www.dev.thundersdata.com/sitemap.xml

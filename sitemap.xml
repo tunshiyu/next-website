@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>http://www.dev.thundersdata.com/homepage</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/srplatform</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/srcube</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/srintel</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/bigdata</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/fintech</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/smartpark</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/smartchain</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/about</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/recruitment</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/logistics</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/industry</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/supplychain</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/hotel</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/smartcity</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.dev.thundersdata.com/airplane</loc>
+  <lastmod>2019-08-30T07:08:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
