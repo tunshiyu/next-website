@@ -7,7 +7,7 @@ import Banner from '@components/Banner';
 import ContactUs from '@components/ContactUs';
 import Footer from '@components/Footer';
 import SolutionIntro from '@components/SolutionIntro';
-import Advantages from '@pages/bigdata/components/Advantages';
+import Advantages from '../bigdata/components/Advantages';
 import Platform from '@components/Platform';
 
 export default () => {
