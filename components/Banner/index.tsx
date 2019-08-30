@@ -7,8 +7,8 @@ export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }
   const settings: Settings = {
     dots: true,
     arrows: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
+    autoplay: true,
+    autoplaySpeed: 5000,
     speed: 2000,
     pauseOnHover: false,
     appendDots: dots => (

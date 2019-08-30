@@ -7,18 +7,18 @@ export default function Footer() {
     {
       title: '产品中心',
       links: [
-        { url: '/srPlatform', text: '数融平台' },
-        { url: '/srCube', text: '数融魔方' },
-        { url: '/srIntel', text: '数融智能' },
+        { url: '/srplatform', text: '数融平台' },
+        { url: '/srcube', text: '数融魔方' },
+        { url: '/srintel', text: '数融智能' },
       ],
     },
     {
       title: '解决方案',
       links: [
-        { url: '/bigData', text: '大数据' },
-        { url: '/finTech', text: '金融科技' },
-        { url: '/smartPark', text: '智慧园区' },
-        { url: '/supplyChain', text: '智慧供应链' },
+        { url: '/bigdata', text: '大数据' },
+        { url: '/fintech', text: '金融科技' },
+        { url: '/smartpark', text: '智慧园区' },
+        { url: '/smartchain', text: '智慧供应链' },
       ],
     },
     {

@@ -7,15 +7,15 @@ import Banner from '@components/Banner';
 import ContactUs from '@components/ContactUs';
 import Footer from '@components/Footer';
 import SolutionIntro from '@components/SolutionIntro';
-import Advantages from '@pages/bigData/components/Advantages';
+import Advantages from '@pages/bigdata/components/Advantages';
 import Platform from '@components/Platform';
 
-export default function FinTech() {
+export default () => {
   const banner = {
-    img: '/static/finTech/banner@2x.png',
+    img: '/static/fintech/banner@2x.png',
     text: '金融科技解决方案',
   };
-  const prefix = '/static/finTech/solutions';
+  const prefix = '/static/fintech/solutions';
   const solutions = [
     {
       img: `${prefix}/融资租赁@2x.png`,
@@ -38,15 +38,15 @@ export default function FinTech() {
   ];
   const advantages = [
     {
-      img: '/static/finTech/advantages/优势1@2x.png',
+      img: '/static/fintech/advantages/优势1@2x.png',
       texts: ['覆盖从顶层规划到落地实施的', '全生命周期的解决方案'],
     },
     {
-      img: '/static/finTech/advantages/优势2@2x.png',
+      img: '/static/fintech/advantages/优势2@2x.png',
       texts: ['大平台小应用，一次平台搭建', '应用长期可快速迭代开发'],
     },
     {
-      img: '/static/finTech/advantages/优势3@2x.png',
+      img: '/static/fintech/advantages/优势3@2x.png',
       texts: ['解决方案经过行业', '标杆企业的充分验证'],
     },
   ];
@@ -54,8 +54,8 @@ export default function FinTech() {
   const platform = {
     title: '数融平台',
     subtitle: '极简灵活的一站式大数据平台',
-    img: '/static/finTech/数融平台@2x.png',
-    href: '/srPlatform',
+    img: '/static/fintech/数融平台@2x.png',
+    href: '/srplatform',
   };
   return (
     <>
@@ -83,4 +83,4 @@ export default function FinTech() {
       </Layout>
     </>
   );
-}
+};

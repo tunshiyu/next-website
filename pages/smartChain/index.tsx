@@ -11,12 +11,12 @@ import Platform from '@components/Platform';
 import Architecture from '@components/Architecture';
 import Partners from '@components/Partners';
 
-export default function SmartChain() {
+export default () => {
   const banner = {
-    img: '/static/smartChain/banner@2x.png',
+    img: '/static/smartchain/banner@2x.png',
     text: '智慧供应链解决方案',
   };
-  const prefix = '/static/smartChain/solutions';
+  const prefix = '/static/smartchain/solutions';
   const solutions = [
     {
       img: `${prefix}/优势1@2x.png`,
@@ -32,13 +32,13 @@ export default function SmartChain() {
     },
   ];
   const partners = [
-    { img: '/static/smartChain/partners/16富春@2x.png', text: '富春控股', url: '/' },
+    { img: '/static/smartchain/partners/16富春@2x.png', text: '富春控股', url: '/' },
   ];
   const platform = {
     title: '数融平台',
     subtitle: '极简灵活的一站式大数据平台',
-    img: '/static/finTech/数融平台@2x.png',
-    href: '/srPlatform',
+    img: '/static/fintech/数融平台@2x.png',
+    href: '/srplatform',
   };
   return (
     <>
@@ -68,7 +68,7 @@ export default function SmartChain() {
             subtitle="大数据+SaaS化仓储物流管理软件+ 智能硬件+智能算法+可视化+供应链金融"
             desc="打通供应链数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术， 构建智慧供应链平台，实现供应链智能化运营，并通过供应链金融激活供应链高效发展"
           />
-          <Architecture img="/static/smartChain/architecture.png" />
+          <Architecture img="/static/smartchain/architecture.png" />
           <Partners partners={partners} title="合作客户" />
           <Platform {...platform} />
           <ContactUs />
@@ -77,4 +77,4 @@ export default function SmartChain() {
       </Layout>
     </>
   );
-}
+};

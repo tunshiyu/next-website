@@ -13,7 +13,7 @@ import Scenarios from '@components/Scenarios';
 
 export default () => {
   const banner = {
-    img: '/static/srIntel/banner@2x.png',
+    img: '/static/srintel/banner@2x.png',
     text: '数融智能',
     subtext: '场景化垂直化的智能组件平台',
   };
@@ -23,42 +23,42 @@ export default () => {
   };
   const products = [
     {
-      img: '/static/srIntel/products/1.png',
+      img: '/static/srintel/products/1.png',
       title: '设备状态监控',
       subtitle: '机器设备的实时的智能监控预警',
       desc:
         '通过各类设备参数的来计算机器状态指标并进行展示和监控预警，并实时掌控机器的生产状态，便于及时排查维修，降低故障发生率，减少设备故障损失和误工损失',
     },
     {
-      img: '/static/srIntel/products/2.png',
+      img: '/static/srintel/products/2.png',
       title: '生产流程追溯',
       subtitle: '产品各环节生产要素的智能追踪',
       desc:
         '通过连接生产各个环节的原材料、半成品、成品之间的编号，可查询产品的每个生产环节的相关的人员、机器、原辅料信息，便于排查产品质量出现问题产生的原因',
     },
     {
-      img: '/static/srIntel/products/3.png',
+      img: '/static/srintel/products/3.png',
       title: '产品质量画像',
       subtitle: '中间环节产品的生产质量可视化',
       desc:
         '通过成品质量参数指标、成品位置关系、各环节产品编号来复原中间环节产品的生产加工质量，便于排查质量问题原因',
     },
     {
-      img: '/static/srIntel/products/4.png',
+      img: '/static/srintel/products/4.png',
       title: '车辆识别跟踪',
       subtitle: '车辆特征和动向的智能识别追踪',
       desc:
         '提供车型识别、车辆检测、车流统计、车辆外观损伤识别等车辆分析相关技术服务，用于园区、道路、仓库的车辆监控分析',
     },
     {
-      img: '/static/srIntel/products/5.png',
+      img: '/static/srintel/products/5.png',
       title: '区块链金融科技',
       subtitle: '基于大数据区块链的金融平台',
       desc:
         '提供资产数据上链服务，使线下资产上链为安全的数字资产，提高金融机构的风险管理能力，促进中小企业的融资',
     },
     {
-      img: '/static/srIntel/products/6.png',
+      img: '/static/srintel/products/6.png',
       title: '用户画像系统',
       subtitle: '用户360度的多维画像分析',
       desc:
@@ -66,7 +66,7 @@ export default () => {
     },
   ];
 
-  const prefix = '/static/srCube/partners';
+  const prefix = '/static/srcube/partners';
   const partners = [
     { img: `${prefix}/1.png`, text: '大海集团' },
     { img: `${prefix}/2.png`, text: '山东大厦' },

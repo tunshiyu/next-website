@@ -13,7 +13,7 @@ import Scenarios from '@components/Scenarios';
 
 export default () => {
   const banner = {
-    img: '/static/srCube/banner@2x.png',
+    img: '/static/srcube/banner@2x.png',
     text: '数融魔方',
     subtext: '灵活简便的数据应用平台',
   };
@@ -23,12 +23,12 @@ export default () => {
   };
   const products = [
     {
-      img: '/static/srCube/products/1.png',
+      img: '/static/srcube/products/1.png',
       title: '分析平台',
       desc: '商业智能分析，帮企业揭秘数据背后的规律和价值',
     },
     {
-      img: '/static/srCube/products/2.png',
+      img: '/static/srcube/products/2.png',
       title: '算法平台',
       desc: '智能算法建模，传统企业也可以使用的人工智能',
     },
@@ -39,7 +39,7 @@ export default () => {
     },
   ];
 
-  const prefix = '/static/srCube/partners';
+  const prefix = '/static/srcube/partners';
   const partners = [
     { img: `${prefix}/1.png`, text: '大海集团' },
     { img: `${prefix}/2.png`, text: '山东大厦' },

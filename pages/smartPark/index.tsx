@@ -11,12 +11,12 @@ import Platform from '@components/Platform';
 import Architecture from '@components/Architecture';
 import Partners from '@components/Partners';
 
-export default function SmartPark() {
+export default () => {
   const banner = {
-    img: '/static/smartPack/banner@2x.png',
+    img: '/static/smartpark/banner@2x.png',
     text: '智慧园区解决方案',
   };
-  const prefix = '/static/smartPack/solutions';
+  const prefix = '/static/smartpark/solutions';
   const solutions = [
     {
       img: `${prefix}/优势1@2x.png`,
@@ -32,13 +32,13 @@ export default function SmartPark() {
     },
   ];
   const partners = [
-    { img: '/static/smartPack/partners/鹊华集团@2x.png', text: '鹊华集团', url: '/' },
+    { img: '/static/smartpark/partners/鹊华集团@2x.png', text: '鹊华集团', url: '/' },
   ];
   const platform = {
     title: '数融平台',
     subtitle: '极简灵活的一站式大数据平台',
-    img: '/static/finTech/数融平台@2x.png',
-    href: '/srPlatform',
+    img: '/static/fintech/数融平台@2x.png',
+    href: '/srplatform',
   };
   return (
     <>
@@ -68,7 +68,7 @@ export default function SmartPark() {
             subtitle="大数据+SaaS化仓储物流管理软件+ 智能硬件+智能算法+可视化+供应链金融科技"
             desc="打通园区数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧园区平台，智能化运营园区，提高园区管理效率，并通过供应链金融激活园区高效发展"
           />
-          <Architecture img="/static/smartPack/architecture.png" />
+          <Architecture img="/static/smartpark/architecture.png" />
           <Partners partners={partners} title="合作客户" />
           <Platform {...platform} />
           <ContactUs />
@@ -77,4 +77,4 @@ export default function SmartPark() {
       </Layout>
     </>
   );
-}
+};

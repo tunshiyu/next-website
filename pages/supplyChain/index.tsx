@@ -11,13 +11,13 @@ import Architecture from '@components/Architecture';
 import Partners from '@components/Partners';
 import MajorProducts from '@components/MajorProducts';
 
-export default function SupplyChain() {
+export default () => {
   const banner = {
-    img: '/static/supplyChain/banner@2x.png',
+    img: '/static/supplychain/banner@2x.png',
     text: '大数据解决方案',
     subtext: '供应链大数据',
   };
-  const prefix = '/static/supplyChain/solutions';
+  const prefix = '/static/supplychain/solutions';
   const solutions = [
     {
       img: `${prefix}/供应链1@2x.png`,
@@ -37,9 +37,9 @@ export default function SupplyChain() {
     { img: '/static/major/数融魔方@2x.png', title: '数融魔方', subtitle: '分析平台 | 算法平台' },
   ];
   const partners = [
-    { img: '/static/supplyChain/partners/1.png', text: '山东大厦', url: '/' },
-    { img: '/static/supplyChain/partners/2.png', text: '富春控股 ', url: '/' },
-    { img: '/static/supplyChain/partners/3.png', text: '南海玉华 ', url: '/' },
+    { img: '/static/supplychain/partners/1.png', text: '山东大厦', url: '/' },
+    { img: '/static/supplychain/partners/2.png', text: '富春控股 ', url: '/' },
+    { img: '/static/supplychain/partners/3.png', text: '南海玉华 ', url: '/' },
   ];
   return (
     <>
@@ -66,7 +66,7 @@ export default function SupplyChain() {
             subtitle="大数据+大数据分析+算法建模+可视化+供应链金融科技"
             desc="打通供应链数据孤岛构建大数据平台，从产地、仓库、物流、销售终端全场景的数字化智能化，通过大数据可视化、分析预测、算法建模、金融科技等技术，优化供应链各个环节，达到决策智能、降本增效、提升服务质量的目标"
           />
-          <Architecture img="/static/supplyChain/architecture.png" />
+          <Architecture img="/static/supplychain/architecture.png" />
           <MajorProducts products={products} />
           <Partners partners={partners} title="合作客户" />
           <ContactUs />
@@ -75,4 +75,4 @@ export default function SupplyChain() {
       </Layout>
     </>
   );
-}
+};

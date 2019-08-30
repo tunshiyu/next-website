@@ -10,12 +10,12 @@ import SolutionIntro from '@components/SolutionIntro';
 import Advantages from './components/Advantages';
 import Platform from '@components/Platform';
 
-export default function BigData() {
+export default () => {
   const banner = {
-    img: '/static/bigData/banner@2x.png',
+    img: '/static/bigdata/banner@2x.png',
     text: '大数据解决方案',
   };
-  const prefix = '/static/bigData/solutions';
+  const prefix = '/static/bigdata/solutions';
   const solutions = [
     {
       img: `${prefix}/物流大数据@2x.png`,
@@ -36,7 +36,7 @@ export default function BigData() {
       text: '供应链大数据',
       subtext:
         '构建供应链大数据平台，实现各流程全场景的数字化，通过大数据可视化、预测、建模、金融科技等技术，优化各个环节，实现智能决策、降本增效',
-      href: '/supplyChain',
+      href: '/supplychain',
     },
     {
       img: `${prefix}/酒店大数据@2x.png`,
@@ -50,7 +50,7 @@ export default function BigData() {
       text: '智慧城市',
       subtext:
         '打通城市数据孤岛，构建大数据平台和共享交换平台，通过大数据分析、精准扶贫系统、光伏区块链技术，提高城市智能管理能力，并实现可持续运营',
-      href: '/smartCity',
+      href: '/smartcity',
     },
     {
       img: `${prefix}/机场大数据@2x.png`,
@@ -62,15 +62,15 @@ export default function BigData() {
   ];
   const advantages = [
     {
-      img: '/static/bigData/advantages/优势1@2x.png',
+      img: '/static/bigdata/advantages/优势1@2x.png',
       texts: ['覆盖从顶层规划到落地实施的', '全生命周期的解决方案'],
     },
     {
-      img: '/static/bigData/advantages/优势2@2x.png',
+      img: '/static/bigdata/advantages/优势2@2x.png',
       texts: ['大平台小应用，一次平台搭建', '应用长期可快速迭代开发'],
     },
     {
-      img: '/static/bigData/advantages/优势3@2x.png',
+      img: '/static/bigdata/advantages/优势3@2x.png',
       texts: ['解决方案经过行业', '标杆企业的充分验证'],
     },
   ];
@@ -78,8 +78,8 @@ export default function BigData() {
   const platform = {
     title: '数融平台',
     subtitle: '极简灵活的一站式大数据平台',
-    img: '/static/bigData/数融平台@2x.png',
-    href: '/srPlatform',
+    img: '/static/bigdata/数融平台@2x.png',
+    href: '/srplatform',
   };
   return (
     <>
@@ -110,4 +110,4 @@ export default function BigData() {
       </Layout>
     </>
   );
-}
+};

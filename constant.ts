@@ -227,7 +227,7 @@ export const BANNERS = [
       text:
         '打通供应链数据孤岛，构建大数据平台，通过大数据分析、算法建模、金融科技等技术，优化供应链各个环节，达到降本增效、提升服务质量的（和决策智能）目标',
       url: '/static/sliderImgs/大数据-供应链大数据.jpg',
-      linkUrl: '/supplyChain',
+      linkUrl: '/supplychain',
     },
     {
       keywords: ['酒店大数据'],
@@ -241,7 +241,7 @@ export const BANNERS = [
       text:
         '打通城市数据孤岛，构建大数据平台和共享交换平台，通过大数据分析、精准 扶贫系统、光伏区块链技术，提高城市智能管理能力，并实现可持续运营',
       url: '/static/sliderImgs/大数据-智慧城市大数据.jpg',
-      linkUrl: '/smartCity',
+      linkUrl: '/smartcity',
     },
     {
       keywords: ['机场大数据'],
@@ -278,7 +278,7 @@ export const BANNERS = [
       text:
         '打通园区数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧园区平台，智能化运营园区，提高园区管理效率，并通过供应链金融激活园区高效发展',
       url: '/static/sliderImgs/智慧园区.jpg',
-      linkUrl: '/smartPark',
+      linkUrl: '/smartpark',
     },
   ],
   [
@@ -287,7 +287,7 @@ export const BANNERS = [
       text:
         '打通供应链数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧供应链平台，实现供应链智能化运营，并通过供应链金融激活供应链高效发展',
       url: '/static/sliderImgs/智慧供应链.jpg',
-      linkUrl: '/finTech',
+      linkUrl: '/fintech',
     },
   ],
 ];

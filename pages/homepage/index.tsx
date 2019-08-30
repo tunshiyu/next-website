@@ -24,6 +24,16 @@ export default function Homepage() {
       text: '赋能传统企业',
       keywords: ['大数据+', 'AI+', '物联网+', '区块链+', '金融+'],
     },
+    {
+      img: '/static/homepage/banners/banner01@2x.png',
+      text: '赋能传统企业',
+      keywords: ['大数据+', 'AI+', '物联网+', '区块链+', '金融+'],
+    },
+    {
+      img: '/static/homepage/banners/banner01@2x.png',
+      text: '赋能传统企业',
+      keywords: ['大数据+', 'AI+', '物联网+', '区块链+', '金融+'],
+    },
   ];
   const advantages = [
     {
@@ -49,14 +59,14 @@ export default function Homepage() {
       title: '数融平台',
       subtitle: '极简灵活的一站式大数据平台',
       description: '数融平台包含数据集成、开发、运维、安全，迅速搭建企业自身数据资产平台',
-      url: '/srPlatform',
+      url: '/srplatform',
     },
     {
       img: '/static/homepage/services/product2@2x.png',
       title: '数融魔方',
       subtitle: '灵活简便的数据应用平台',
       description: '包含可视化分析、建模、API等，迅速实现企业商业智能分析',
-      url: '/srCube',
+      url: '/srcube',
     },
     {
       img: '/static/homepage/services/product3@2x.png',
@@ -64,7 +74,7 @@ export default function Homepage() {
       subtitle: '场景化垂直化的智能组件平台',
       description:
         '涉及工业、物流、供应链、金融领域的视频结构化分析、文本分析等智能分析组件，可快速构建企业的智能应用',
-      url: '/srIntel',
+      url: '/srintel',
     },
   ];
   const prefix = '/static/homepage/partners';

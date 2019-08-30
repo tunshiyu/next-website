@@ -10,13 +10,13 @@ import SolutionIntro from '@components/SolutionIntro';
 import Architecture from '@components/Architecture';
 import Partners from '@components/Partners';
 
-export default function SmartCity() {
+export default () => {
   const banner = {
-    img: '/static/smartCity/banner@2x.png',
+    img: '/static/smartcity/banner@2x.png',
     text: '大数据解决方案',
     subtext: '智慧城市大数据',
   };
-  const prefix = '/static/smartCity/solutions';
+  const prefix = '/static/smartcity/solutions';
   const solutions = [
     {
       img: `${prefix}/智慧城市1@2x.png`,
@@ -32,8 +32,8 @@ export default function SmartCity() {
     },
   ];
   const partners = [
-    { img: '/static/smartCity/partners/承德@2x.png', text: '河北承德', url: '/' },
-    { img: '/static/smartCity/partners/上海@2x.png', text: '上海 ', url: '/' },
+    { img: '/static/smartcity/partners/承德@2x.png', text: '河北承德', url: '/' },
+    { img: '/static/smartcity/partners/上海@2x.png', text: '上海 ', url: '/' },
   ];
   return (
     <>
@@ -60,7 +60,7 @@ export default function SmartCity() {
             subtitle="大数据+共享交换+分析可视化+精准扶贫+光伏扶贫"
             desc="打通城市数据孤岛，构建大数据平台和共享交换平台，通过大数据分析、精准扶贫系统、光伏区块链技术， 提高城市智能管理能力，并实现可持续运营"
           />
-          <Architecture img="/static/smartCity/architecture.png" />
+          <Architecture img="/static/smartcity/architecture.png" />
           <Partners partners={partners} title="合作客户" />
           <ContactUs />
           <Footer />
@@ -68,4 +68,4 @@ export default function SmartCity() {
       </Layout>
     </>
   );
-}
+};

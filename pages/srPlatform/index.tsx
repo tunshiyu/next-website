@@ -13,47 +13,47 @@ import Scenarios from '@components/Scenarios';
 
 export default () => {
   const banner = {
-    img: '/static/srPlatform/banner@2x.png',
+    img: '/static/srplatform/banner@2x.png',
     text: '数融平台',
     subtext: '极简灵活的一站式大数据平台',
   };
   const productIntro = {
     text:
       '数融平台主要包含数据集成、数据开发、数据地图、权限管理、运维监控等子系统，是自主研发的一款数据融合产品， 可通过可视化图形配置界面即可自服务部署一条实时数据管道，并提供丰富的数据任务调度、平台运维监控、数据资源管理、权限管理等功能，帮助客户打通数据孤岛，构建数据资产平台',
-    img: '/static/srPlatform/architecture@2x.png',
+    img: '/static/srplatform/architecture@2x.png',
   };
   const products = [
     {
-      img: '/static/srPlatform/products/1.png',
+      img: '/static/srplatform/products/1.png',
       title: '数据集成',
       desc:
         '稳定高效、弹性伸缩的数据同步平台。致力于提供复杂网络环境下、丰富的异构数据源之间数据高速稳定的数据移动及同步能力，打通数据孤岛',
     },
     {
-      img: '/static/srPlatform/products/2.png',
+      img: '/static/srplatform/products/2.png',
       title: '数据开发',
       desc:
         '自动化数据开发任务管理工作流程，且只需维护已配置的工作流程。节省开发的时间，提高开发的效率和质量。',
     },
     {
-      img: '/static/srPlatform/products/3.png',
+      img: '/static/srplatform/products/3.png',
       title: '运维监控',
       desc: '资源、数据、服务的自动化、可视化的统一监控报警监控，实现智能运维。',
     },
     {
-      img: '/static/srPlatform/products/4.png',
+      img: '/static/srplatform/products/4.png',
       title: '权限管理',
       desc: '实现数据、应用、菜单多层次权限管理，分级管理保障企业内部的数据安全。',
     },
     {
-      img: '/static/srPlatform/products/5.png',
+      img: '/static/srplatform/products/5.png',
       title: '数据地图',
       desc:
         '以数据搜索为基础，辅以强大的表使用说明、数据类目、数据血缘、字段血缘等工具，帮助数据表的使用者和拥有者们更好地管理数据、协作开发。',
     },
   ];
 
-  const prefix = '/static/srPlatform/partners';
+  const prefix = '/static/srplatform/partners';
   const partners = [
     { img: `${prefix}/1.png`, text: '大海集团' },
     { img: `${prefix}/2.png`, text: '山东大厦' },
