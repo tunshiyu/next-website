@@ -7,7 +7,7 @@
  * @作者: 陈杰
  * @Date: 2019-08-20 19:05:22
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-30 14:22:50
+ * @LastEditTime: 2019-08-31 22:03:48
  */
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.less';
@@ -150,6 +150,8 @@ export default function Header({
                   <a>机场大数据</a>
                 </Link>
               </MenuItem>
+              {/* 该组件未提供SubMenu的selected状态，所以加一个匹配的子类，并将其隐藏 */}
+              <MenuItem key="3-1" className={styles.empty} />
             </SubMenu>
             {/* 金融科技解决方案的子页面暂无完整方案，暂时关闭，只开启父级MenuItem */}
             {/* <SubMenu

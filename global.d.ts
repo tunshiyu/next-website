@@ -3,8 +3,8 @@
  * @公司: thundersdata
  * @作者: 陈杰
  * @Date: 2019-07-22 19:44:52
- * @LastEditors: 陈杰
- * @LastEditTime: 2019-07-29 22:05:59
+ * @LastEditors: 于效仟
+ * @LastEditTime: 2019-08-31 22:01:08
  */
 declare module '*.less';
 
@@ -24,7 +24,10 @@ declare module 'rc-menu' {
     popupClassName?: React.CSSProperties;
     expandIcon?: React.ReactNode;
   }
+  export interface MenuItemProps {
+    className?: React.CSSProperties;
+  }
   export default class Menu extends React.Component<MenuProps> {}
   export class SubMenu extends React.Component<SubMenuProps> {}
-  export class MenuItem extends React.Component {}
+  export class MenuItem extends React.Component<MenuItemProps> {}
 }

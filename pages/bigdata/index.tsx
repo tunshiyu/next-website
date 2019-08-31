@@ -81,6 +81,7 @@ export default () => {
     img: '/static/bigdata/数融平台@2x.png',
     href: '/srplatform',
   };
+
   return (
     <>
       <Head>
