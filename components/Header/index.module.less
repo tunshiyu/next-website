@@ -50,6 +50,12 @@
       }
 
       :global {
+
+        .rc-menu {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+          border: none !important;
+        }
+
         .rc-menu-item {
           min-width: 56px;
           text-align: center;
@@ -256,4 +262,14 @@
 
 .empty {
   display: none;
+}
+
+:global {
+  .rc-menu-submenu {
+
+    .rc-menu {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+      border: none !important;
+    }
+  }
 }

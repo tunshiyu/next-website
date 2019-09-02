@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.copyright}>
-          杭州雷数科技有限公司 版权所有 ©️ 2017-2018 All Rights Reserved 浙ICP备17054225号-1
+          杭州雷数科技有限公司 版权所有 ©️ 2017-2019 All Rights Reserved 浙ICP备17054225号-1
         </div>
       </div>
     </div>

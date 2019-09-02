@@ -18,22 +18,12 @@ export default function Solutions() {
     arrows: false,
     infinite: true,
     centerMode: true,
-    centerPadding: '100px',
     slidesToShow: 2,
     appendDots: dots => (
       <div>
         <ul className={styles.slickDots}>{dots}</ul>
       </div>
     ),
-    responsive: [
-      {
-        breakpoint: 1480,
-        settings: {
-          centerPadding: '280px',
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
   const onePicSettings: Settings = {
     draggable: false,
@@ -49,15 +39,6 @@ export default function Solutions() {
         <ul className={styles.slickDots}>{dots}</ul>
       </div>
     ),
-    responsive: [
-      {
-        breakpoint: 1480,
-        settings: {
-          centerPadding: '280px',
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
 
   return (
