@@ -40,7 +40,7 @@
         height: 100%;
         width: @width;
         float: left;
-        transition: background-size 3s;
+        transition: background-size 1.5s;
         background-size: 400px 500px;
         background-position: center center;
         line-height: 500px;
@@ -54,37 +54,37 @@
 
 
         &:hover {
-          background-size: 200% 150%;
+          background-size: 150% 115%;
           opacity: 0.8;
         }
 
         &:nth-child(1) {
-          background-image: url('/static/product_sliderImgs/1.jpg');
+          background-image: url('/static/product_sliderImgs/1.png');
         }
 
         &:nth-child(2) {
-          background-image: url('/static/product_sliderImgs/2.jpg');
+          background-image: url('/static/product_sliderImgs/2.png');
         }
 
         &:nth-child(3) {
-          background-image: url('/static/product_sliderImgs/3.jpg');
+          background-image: url('/static/product_sliderImgs/3.png');
 
         }
 
         &:nth-child(4) {
-          background-image: url('/static/product_sliderImgs/4.jpg');
+          background-image: url('/static/product_sliderImgs/4.png');
         }
 
         &:nth-child(5) {
-          background-image: url('/static/product_sliderImgs/5.jpg');
+          background-image: url('/static/product_sliderImgs/5.png');
         }
 
         &:nth-child(6) {
-          background-image: url('/static/product_sliderImgs/6.jpg');
+          background-image: url('/static/product_sliderImgs/6.png');
         }
 
         &:nth-child(7) {
-          background-image: url('/static/product_sliderImgs/7.jpg');
+          background-image: url('/static/product_sliderImgs/7.png');
         }
       }
     }
@@ -96,17 +96,17 @@
       right: 0;
       top: 0;
       width: @btnWidth;
-      background-image: url('/static/product_sliderImgs/sprite.png');
+      background-image: url('/static/product_sliderImgs/sprite@2x.png');
     }
 
     .btnLeft {
       .btn();
-      background-position: -0px -200px;
+      background-position: -24px -50px;
     }
 
     .btnRight {
       .btn();
-      background-position: -44px -200px;
+      background-position: 66px -50px;
     }
   }
 }
