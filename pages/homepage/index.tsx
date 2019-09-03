@@ -110,7 +110,11 @@ export default function Homepage() {
     <>
       <Head>
         <title>杭州雷数科技有限公司</title>
-        <meta name="description" content="杭州雷数科技有限公司首页" />
+        <link rel="icon" href="/static/tdlogo.png"></link>
+        <meta
+          name="description"
+          content="杭州雷数科技有限公司立于2017年底, 是一家专注于大数据商业智能服务的技术领先型科技公司，由来自微软、阿里等顶尖大数据、人工智能企业的资深互联网专家与行业实战专家共同创立"
+        />
         <meta name="keywords" content="大数据,物联网,区块链,金融" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
