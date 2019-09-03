@@ -4,7 +4,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-20 19:05:23
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-29 17:41:52
+ * @LastEditTime: 2019-09-03 11:25:53
  */
 import React, { useState } from 'react';
 import styles from './index.module.less';
@@ -62,7 +62,7 @@ export default function Recruitment() {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header selectedKeys={['6-2']} notScrollToTop />
+          <Header selectedKeys={['6-2']} />
           <Banner banner={banner} />
           <div className={styles.wrap}>
             {/* 职位类型  */}

@@ -69,7 +69,9 @@ export default function Solutions() {
               className={styles.wrap}
               key={index}
               onClick={() => {
-                item.linkUrl && Router.push({ pathname: item.linkUrl });
+                item.linkUrl &&
+                  // 解决nextjs Router.push do not scrollToTop
+                  Router.push({ pathname: item.linkUrl }).then(() => window.scrollTo(0, 0));
               }}
             >
               <img src={item.url} className={styles.img} />

@@ -28,7 +28,8 @@ const Layout: React.FC = props => {
       </Head>
       <style jsx global>{`
         html {
-          overflow: -moz-hidden-unscrollable;
+          /*火狐下隐藏滚动条*/
+          scrollbar-width: none;
           height: 100%;
         }
 

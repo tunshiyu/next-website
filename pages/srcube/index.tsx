@@ -65,7 +65,7 @@ export default () => {
       </Head>
       <Layout>
         <div className={styles.page}>
-          <Header selectedKeys={['2-2']} notScrollToTop />
+          <Header selectedKeys={['2-2']} />
           <Banner banner={banner} />
           <ProductIntro {...productIntro} />
           <Products products={products} />
