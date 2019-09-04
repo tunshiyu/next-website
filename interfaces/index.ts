@@ -4,7 +4,7 @@
  * @作者: 陈杰
  * @Date: 2019-07-24 18:05:41
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-26 17:41:19
+ * @LastEditTime: 2019-09-04 19:16:58
  */
 
 export interface Banner {
@@ -17,6 +17,8 @@ export interface BannerItem {
   text: string;
   keywords: string[];
   img: string;
+  // 用于添加文字中的符号
+  symbol?: boolean;
 }
 
 /**雷数优势 */

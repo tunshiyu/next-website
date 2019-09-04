@@ -43,7 +43,9 @@ export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }
               {item.keywords.length > 0 && (
                 <div className={styles.keywords}>
                   {item.keywords.map(keyword => (
-                    <span key={keyword}>{keyword}</span>
+                    <span key={keyword} className={item.symbol && styles.keyword}>
+                      {keyword}
+                    </span>
                   ))}
                 </div>
               )}

@@ -17,22 +17,26 @@ export default function Homepage() {
     {
       img: '/static/homepage/banners/banner01@2x.png',
       text: '赋能传统企业',
-      keywords: ['大数据＋', 'AI＋', '物联网＋', '区块链＋', '金融＋'],
+      keywords: ['大数据', 'AI', '物联网', '区块链', '金融'],
+      symbol: true,
     },
     {
       img: '/static/homepage/banners/banner01@2x.png',
       text: '赋能传统企业',
-      keywords: ['大数据＋', 'AI＋', '物联网＋', '区块链＋', '金融＋'],
+      keywords: ['大数据', 'AI', '物联网', '区块链', '金融'],
+      symbol: true,
     },
     {
       img: '/static/homepage/banners/banner01@2x.png',
       text: '赋能传统企业',
-      keywords: ['大数据＋', 'AI＋', '物联网＋', '区块链＋', '金融＋'],
+      keywords: ['大数据', 'AI', '物联网', '区块链', '金融'],
+      symbol: true,
     },
     {
       img: '/static/homepage/banners/banner01@2x.png',
       text: '赋能传统企业',
-      keywords: ['大数据＋', 'AI＋', '物联网＋', '区块链＋', '金融＋'],
+      keywords: ['大数据', 'AI', '物联网', '区块链', '金融'],
+      symbol: true,
     },
   ];
   const advantages = [
