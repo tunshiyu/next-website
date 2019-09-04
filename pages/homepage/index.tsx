@@ -17,30 +17,29 @@ export default function Homepage() {
     {
       img: '/static/homepage/banners/banner01@2x.png',
       text: '赋能传统企业',
-      keywords: ['大数据+', 'AI+', '物联网+', '区块链+', '金融+'],
+      keywords: ['大数据＋', 'AI＋', '物联网＋', '区块链＋', '金融＋'],
     },
     {
       img: '/static/homepage/banners/banner01@2x.png',
       text: '赋能传统企业',
-      keywords: ['大数据+', 'AI+', '物联网+', '区块链+', '金融+'],
+      keywords: ['大数据＋', 'AI＋', '物联网＋', '区块链＋', '金融＋'],
     },
     {
       img: '/static/homepage/banners/banner01@2x.png',
       text: '赋能传统企业',
-      keywords: ['大数据+', 'AI+', '物联网+', '区块链+', '金融+'],
+      keywords: ['大数据＋', 'AI＋', '物联网＋', '区块链＋', '金融＋'],
     },
     {
       img: '/static/homepage/banners/banner01@2x.png',
       text: '赋能传统企业',
-      keywords: ['大数据+', 'AI+', '物联网+', '区块链+', '金融+'],
+      keywords: ['大数据＋', 'AI＋', '物联网＋', '区块链＋', '金融＋'],
     },
   ];
   const advantages = [
     {
       img: '/static/homepage/advantages/advantage1@2x.png',
       title: '方法论优势',
-      subtitle:
-        '独创三步走方法论：大数据平台、数据业务化、业务数据化，在诸多企业大数据项目中成功落地，并成功完成多个亿万级的项目顶层规划 ',
+      subtitle: '独创“三步走”方法论：大数据平台、数据业务化、业务数据化。成功落地近亿级大数据项目',
     },
     {
       img: '/static/homepage/advantages/advantage2@2x.png',

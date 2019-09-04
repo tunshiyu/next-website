@@ -203,6 +203,8 @@
       a {
         color: @menu-item-color;
         text-decoration: none;
+        display: inline-block;
+        width: 100%;
       }
     }
   }
@@ -265,6 +267,19 @@
     .rc-menu {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
       border: none !important;
+    }
+  }
+
+  // 覆盖全局fontSize
+  .rc-menu-item {
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .submenu-title-wrapper {
+    span {
+      font-size: 18px;
     }
   }
 }
