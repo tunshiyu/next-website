@@ -6,7 +6,7 @@
  * @作者: 陈杰
  * @Date: 2019-08-20 19:05:22
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-09-04 15:07:57
+ * @LastEditTime: 2019-09-05 13:38:56
  */
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.less';
@@ -103,7 +103,10 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
               }
               title={
                 <span className="submenu-title-wrapper">
-                  <span onClick={() => Router.push('/bigdata')} style={{ cursor: 'pointer' }}>
+                  <span
+                    onClick={() => Router.push('/bigdata').then(() => window.scrollTo(0, 0))}
+                    style={{ cursor: 'pointer' }}
+                  >
                     大数据解决方案
                   </span>
                 </span>

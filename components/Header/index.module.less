@@ -148,7 +148,8 @@
 
 
     .content {
-      position: initial;
+      // 解决IE兼容不用initial
+      position: static;
       max-width: 1240px;
       margin: 0 auto;
 
@@ -285,5 +286,6 @@
 
   .iconfont {
     font-size: 12px;
+    margin-left: 2px;
   }
 }
