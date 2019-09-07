@@ -10,7 +10,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 16:18:31
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-28 19:20:36
+ * @LastEditTime: 2019-09-06 17:56:17
  */
 import React from 'react';
 import styles from './index.module.less';
@@ -32,7 +32,7 @@ export default function News(props: NewsDataProps) {
     Router.push({
       pathname: '/newsDetail',
       query: { newsId },
-    });
+    }).then(() => window.scrollTo(0, 0));
   }
   return (
     <>

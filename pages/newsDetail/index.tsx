@@ -5,7 +5,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-21 19:31:58
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-08-29 17:42:27
+ * @LastEditTime: 2019-09-07 10:48:08
  */
 import React from 'react';
 import styles from './index.module.less';
@@ -41,9 +41,9 @@ const data = {
   time: '2018-10-25 18:47',
   content: text,
   aheadUrl: '',
-  aheadTitle: '上一篇文章title',
+  aheadTitle: '上一篇：雷数科技荣获阿里巴巴诸神之战浙江总决赛冠军',
   nextUrl: '',
-  nextTitle: '下一篇文章title',
+  nextTitle: '下一篇：雷数科技荣获阿里巴巴诸神之战浙江总决赛冠军',
 };
 const { title, time, content, aheadUrl, aheadTitle, nextUrl, nextTitle } = data || {
   title: '数据暂无',

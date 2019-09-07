@@ -14,12 +14,12 @@ export default function About() {
     {
       img: '/static/about/advantages/优势1@2x.png',
       title: '顶尖的技术团队',
-      subtitle: '名企名校阵容,保障研发实力业界领先',
+      subtitle: '名企名校阵容，保障研发实力业界领先',
     },
     {
       img: '/static/about/advantages/优势2@2x.png',
       title: '高速的业务增长',
-      subtitle: '2018年订单2000万,预计2019年订单破亿',
+      subtitle: '2018年订单2000万，预计2019年订单破亿',
     },
     {
       img: '/static/about/advantages/优势3@2x.png',

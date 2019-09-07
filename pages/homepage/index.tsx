@@ -43,12 +43,12 @@ export default function Homepage() {
     {
       img: '/static/homepage/advantages/advantage1@2x.png',
       title: '方法论优势',
-      subtitle: '独创“三步走”方法论：大数据平台、数据业务化、业务数据化。成功落地近亿级大数据项目',
+      subtitle: '独创“三步走”方法论：大数据平台、数据业务化、业务数据化，成功落地近亿级大数据项目',
     },
     {
       img: '/static/homepage/advantages/advantage2@2x.png',
       title: '创新技术优势',
-      subtitle: '创新性的大量引用区块链、金融科技技术帮助传统企业实现颠覆式的改造 ',
+      subtitle: '创新性地大量引用区块链、金融科技技术帮助传统企业实现颠覆式的改造 ',
     },
     {
       img: '/static/homepage/advantages/advantage3@2x.png',
@@ -68,7 +68,7 @@ export default function Homepage() {
       img: '/static/homepage/services/product2@2x.png',
       title: '数融魔方',
       subtitle: '灵活简便的数据应用平台',
-      description: '包含可视化分析、建模、API等，迅速实现企业商业智能分析',
+      description: '包含可视化分析、建模、API等功能，迅速实现企业商业智能分析',
       url: '/srcube',
     },
     {
