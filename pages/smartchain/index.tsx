@@ -65,8 +65,8 @@ export default () => {
           <Banner banner={banner} />
           <SolutionIntro
             solutions={solutions}
-            subtitle="大数据+SaaS化仓储物流管理软件+ 智能硬件+智能算法+可视化+供应链金融"
-            desc="打通供应链数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术， 构建智慧供应链平台，实现供应链智能化运营，并通过供应链金融激活供应链高效发展"
+            subtitle="大数据+SaaS化仓储物流管理软件+智能硬件+智能算法+可视化+供应链金融"
+            desc="打通供应链数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧供应链平台，实现供应链智能化运营，并通过供应链金融激活供应链高效发展"
           />
           <Architecture img="/static/smartchain/architecture.png" />
           <Partners partners={partners} title="合作客户" />

@@ -48,7 +48,7 @@ export default function Logistics() {
         <title>物流大数据-雷数科技</title>
         <meta
           name="description"
-          content="通过对供应链全程的人、车、货、财务等供应链环节的智能管控，提高物流效率，提升服务质量，降低物流成本"
+          content="通过对供应链全程的人、车、货、场等环节的智能管控，提高物流效率，提升服务质量，降低物流成本"
         />
         <meta name="keywords" content="大数据,AI,供应链金融,智能硬件" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -65,7 +65,7 @@ export default function Logistics() {
           <SolutionIntro
             solutions={solutions}
             subtitle="大数据+AI+供应链金融+智能硬件"
-            desc="通过对供应链全程的人、车、货、财务等供应链环节的智能管控，提高物流效率，提升服务质量，降低物流成本"
+            desc="通过对供应链全程的人、车、货、场等环节的智能管控，提高物流效率，提升服务质量，降低物流成本"
           />
           <Architecture img="/static/logistics/architecture.png" />
           <MajorProducts products={products} />

@@ -47,7 +47,7 @@ export default function Hotel() {
         <title>酒店大数据-雷数科技</title>
         <meta
           name="description"
-          content="打通酒店数据孤岛构建大数据平台，从采购、厨房、餐厅到客房全流程数据化智能化，提高业务流程效率， 降低人力成本，提升服务质量"
+          content="打通酒店数据孤岛构建大数据平台，从采购、厨房、餐厅到客房全流程数据化、智能化，提高业务流程效率， 降低人力成本，提升服务质量"
         />
         <meta name="keywords" content="大数据,AI,智能硬件" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -64,7 +64,7 @@ export default function Hotel() {
           <SolutionIntro
             solutions={solutions}
             subtitle="大数据+AI+智能硬件"
-            desc="打通酒店数据孤岛构建大数据平台，从采购、厨房、餐厅到客房全流程数据化智能化，提高业务流程效率， 降低人力成本，提升服务质量"
+            desc="打通酒店数据孤岛构建大数据平台，从采购、厨房、餐厅到客房全流程数据化、智能化，提高业务流程效率， 降低人力成本，提升服务质量"
           />
           <Architecture img="/static/hotel/architecture.png" />
           <MajorProducts products={products} />

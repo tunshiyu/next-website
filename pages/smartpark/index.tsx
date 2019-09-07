@@ -65,7 +65,7 @@ export default () => {
           <Banner banner={banner} />
           <SolutionIntro
             solutions={solutions}
-            subtitle="大数据+SaaS化仓储物流管理软件+ 智能硬件+智能算法+可视化+供应链金融科技"
+            subtitle="大数据+SaaS化仓储物流管理软件+智能硬件+智能算法+可视化+供应链金融科技"
             desc="打通园区数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧园区平台，智能化运营园区，提高园区管理效率，并通过供应链金融激活园区高效发展"
           />
           <Architecture img="/static/smartpark/architecture.png" />
