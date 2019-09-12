@@ -34,34 +34,114 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   .keywords,
   .text {
-    font-size: 50px;
+    font-size: 42px;
     color: white;
-    line-height: 125px;
+    line-height: 96px;
+    margin-left: 340px;
+  }
+
+  .texts {
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 64px;
+    margin-left: 340px;
+    height: 116px;
+
+    span {
+      margin-right: 12px;
+    }
+    span:nth-child(4) {
+      display: block;
+    }
   }
 
   .keywords {
-    width: 1010px;
+    width: 738px;
     display: flex;
     justify-content: space-between;
   }
 
   .keyword::after {
     content: '+';
-    font-size: 62px;
+    font-size: 36px;
     position: relative;
     top: -16px;
-    left: 8px;
+    left: 1px;
   }
 }
-
 
 ul.slickDots {
   margin: 0;
   transform: translateY(-70px);
 
   .slick();
+}
+
+.bannerWrap {
+  position: relative;
+
+  .comonBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    background-size: 100%;
+    width: 38px;
+    height: 36px;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .leftBtn {
+    .comonBtn();
+    left: 108px;
+    background-image: url('/static/homepage/left.png');
+  }
+
+  .rightBtn {
+    .comonBtn();
+    right: 138px;
+    background-image: url('/static/homepage/right.png');
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 1230px;
+    height: 280px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 33%;
+      border-right: #fff 1px solid;
+      &:last-child {
+        border: none;
+      }
+      span {
+        &:nth-child(1) {
+          cursor: pointer;
+          height: 33px;
+          font-size: 24px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 1);
+          line-height: 33px;
+        }
+        &:nth-child(2) {
+          height: 40px;
+          font-size: 16px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.6);
+          line-height: 40px;
+        }
+      }
+    }
+  }
 }

@@ -4,7 +4,7 @@
  * @作者: 陈杰
  * @Date: 2019-07-24 18:05:41
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-09-04 19:16:58
+ * @LastEditTime: 2019-09-12 11:47:51
  */
 
 export interface Banner {
@@ -14,7 +14,10 @@ export interface Banner {
 }
 /** 轮播图/banner */
 export interface BannerItem {
-  text: string;
+  // 附标题是单行文本时
+  text?: string;
+  // 附标题是多行文本时
+  texts?: string[];
   keywords: string[];
   img: string;
   // 用于添加文字中的符号

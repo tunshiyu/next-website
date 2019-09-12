@@ -2,10 +2,14 @@ import React from 'react';
 import Slider, { Settings } from 'react-slick';
 import styles from './index.module.less';
 import { BannerItem, Banner } from 'interfaces';
+import Router from 'next/router';
 
 export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }) => {
+  let sliderObj: {
+    slickNext: () => void;
+    slickPrev: () => void;
+  };
   const settings: Settings = {
-    dots: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -29,30 +33,61 @@ export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }
     );
   }
   return (
-    <Slider {...settings}>
-      {banners &&
-        banners.length > 0 &&
-        banners.map((item, index) => (
-          <div key={index}>
-            <div
-              className={styles.banners}
-              style={{
-                backgroundImage: `url(${item.img})`,
-              }}
-            >
-              {item.keywords.length > 0 && (
-                <div className={styles.keywords}>
-                  {item.keywords.map(keyword => (
-                    <span key={keyword} className={item.symbol && styles.keyword}>
-                      {keyword}
-                    </span>
-                  ))}
-                </div>
-              )}
-              {item.text && <div className={styles.text}>{item.text}</div>}
+    <div className={styles.bannerWrap}>
+      <span className={styles.leftBtn} onClick={() => sliderObj!.slickPrev()}></span>
+      <span className={styles.rightBtn} onClick={() => sliderObj!.slickNext()}></span>
+      <Slider {...settings} ref={slider => (sliderObj = slider!)}>
+        {banners &&
+          banners.length > 0 &&
+          banners.map((item, index) => (
+            <div className={styles.bannersWrap} key={index}>
+              <div
+                className={styles.banners}
+                style={{
+                  backgroundImage: `url(${item.img})`,
+                }}
+              >
+                {item.keywords.length > 0 && (
+                  <div className={styles.keywords}>
+                    {item.keywords.map(keyword => (
+                      <span key={keyword} className={item.symbol && styles.keyword}>
+                        {keyword}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                {item.text && <div className={styles.text}>{item.text}</div>}
+                {item.texts && (
+                  <div className={styles.texts}>
+                    {item.texts.map((text, index) => (
+                      <span key={index}>{text}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
-    </Slider>
+          ))}
+      </Slider>
+      <div className={styles.cards}>
+        <div className={styles.card}>
+          <span onClick={() => Router.push('/srplatform').then(() => window.scrollTo(0, 0))}>
+            数融平台
+          </span>
+          <span>极简灵活的一站式大数据平台</span>
+        </div>
+        <div className={styles.card}>
+          <span onClick={() => Router.push('/srcube').then(() => window.scrollTo(0, 0))}>
+            数融魔方
+          </span>
+          <span>灵活简便的数据应用平台</span>
+        </div>
+        <div className={styles.card}>
+          <span onClick={() => Router.push('/srintel').then(() => window.scrollTo(0, 0))}>
+            数融智能
+          </span>
+          <span>场景化垂直化的智能组件平台</span>
+        </div>
+      </div>
+    </div>
   );
 };
