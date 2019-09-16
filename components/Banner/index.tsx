@@ -11,7 +11,7 @@ export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }
   };
   const settings: Settings = {
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     speed: 2000,
     pauseOnHover: false,
