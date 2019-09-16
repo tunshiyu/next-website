@@ -11,7 +11,7 @@ export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }
   };
   const settings: Settings = {
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     speed: 2000,
     pauseOnHover: false,
@@ -88,6 +88,7 @@ export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }
           <span>场景化垂直化的智能组件平台</span>
         </div>
       </div>
+      <div className={styles.mouseImg}></div>
     </div>
   );
 };
