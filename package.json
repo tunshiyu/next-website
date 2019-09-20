@@ -19,6 +19,8 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "@sentry/browser": "^5.1.0",
+    "@zeit/next-source-maps": "0.0.4-canary.1",
     "classnames": "^2.2.6",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
