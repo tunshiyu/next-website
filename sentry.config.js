@@ -2,7 +2,7 @@ module.exports = {
   config: {
     project: 'td-webkit',
     organization: 'leishu',
-    apiKey: '92fcce7bc0174062ae07ad210665822822b164bd59d94b8bbf58cd92700ffde5',
+    apiKey: '04f1dce9fdf84b8cacaedb84dbb8779d68f1b0cce32c4297a6397bb4ab7f2302',
     baseSentryURL: 'http://192.168.0.201:29177/api/0',
     release: `release-${require('./package.json').version}`,
   },

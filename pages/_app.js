@@ -1,10 +1,11 @@
 import React from 'react';
 import App, { Container } from 'next/app';
 import * as Sentry from '@sentry/browser';
+import sentryconfig from '../sentry.config';
 
 Sentry.init({
-  dsn:
-    'http://5d7bbe7b206b4ee9b99ae3a478298dc1:33e4b612c92740a0bbf111dcacba2993@192.168.0.201:29177/6',
+  dsn: sentryconfig.dsn,
+  release: sentryconfig.config.release,
 });
 
 class MyApp extends App {

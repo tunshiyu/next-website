@@ -15,6 +15,11 @@ import Header from '@components/Header';
 export default function Homepage() {
   const banners = [
     {
+      img: '/static/homepage/banners/0.png',
+      text: '',
+      keywords: [],
+    },
+    {
       img: '/static/homepage/banners/1.png',
       text: '赋能传统企业',
       keywords: ['大数据', 'AI', '物联网', '区块链', '金融'],
@@ -73,7 +78,7 @@ export default function Homepage() {
       title: '数融智能',
       subtitle: '场景化垂直化的智能组件平台',
       description:
-        '涉及工业、物流、供应链、金融领域的视频结构化分析、文本分析等智能分析组件，可快速构建企业的智能应用',
+        '涉及工业、物流、供应链、金融领域的视频结构化分析、文本分析等智能分析组件，可快速构建企业智能应用',
       url: '/srintel',
     },
   ];
