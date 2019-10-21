@@ -4,7 +4,7 @@
  * @作者: 陈杰
  * @Date: 2019-08-08 18:25:50
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-09-23 14:26:23
+ * @LastEditTime: 2019-10-21 10:19:13
  */
 const express = require('express');
 const next = require('next');
@@ -21,7 +21,7 @@ app.prepare().then(() => {
     const deviceAgent = req.headers['user-agent'].toLowerCase();
     const agentID = deviceAgent.match(/(iphone|ipod|ipad|android)/);
     if (agentID) {
-      res.redirect(301, 'http://m.dev.thundersdata.com/homepage');
+      res.redirect(301, 'http://m.thundersdata.com/homepage');
     } else {
       res.redirect(301, '/homepage');
     }
