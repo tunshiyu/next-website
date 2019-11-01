@@ -15,6 +15,7 @@ export default () => {
   const banner = {
     img: '/static/smartpark/banner@2x.png',
     text: '智慧园区解决方案',
+    subtext: '集成仓储园区管理软件、智能算法技术、金融科技和智能硬件提升园区综合实力，增加园区收入',
   };
   const prefix = '/static/smartpark/solutions';
   const solutions = [

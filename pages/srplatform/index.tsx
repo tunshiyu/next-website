@@ -1,3 +1,11 @@
+/*
+ * @文件描述:数融平台
+ * @公司: thundersdata
+ * @作者: 陈杰
+ * @Date: 2019-09-14 10:00:34
+ * @LastEditors: 于效仟
+ * @LastEditTime: 2019-11-01 11:47:20
+ */
 import React from 'react';
 import styles from './index.module.less';
 import Head from 'next/head';
