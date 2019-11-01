@@ -7,16 +7,22 @@ import Banner from '@components/Banner';
 import ContactUs from '@components/ContactUs';
 import Footer from '@components/Footer';
 import SolutionIntro from '@components/SolutionIntro';
-import Platform from '@components/Platform';
 import Architecture from '@components/Architecture';
+import MajorProducts from '@components/MajorProducts';
 import Partners from '@components/Partners';
 
 export default () => {
   const banner = {
     img: '/static/smartchain/banner@2x.png',
     text: '智慧供应链解决方案',
+    subtext: '基于大数据分析、优化算法和供应链金融科技 实现数据化运营，提升供应链的效率和质量',
   };
   const prefix = '/static/smartchain/solutions';
+  const products = [
+    { img: '/static/major/数融平台@2x.png', title: '数融平台', subtitle: '' },
+    { img: '/static/major/数融魔方@2x.png', title: '数融魔方', subtitle: '' },
+    { img: '/static/major/数融智能@2x.png', title: '数融智能', subtitle: '' },
+  ];
   const solutions = [
     {
       img: `${prefix}/优势1@2x.png`,
@@ -34,12 +40,7 @@ export default () => {
   const partners = [
     { img: '/static/smartchain/partners/16富春@2x.png', text: '富春控股', url: '/' },
   ];
-  const platform = {
-    title: '数融平台',
-    subtitle: '极简灵活的一站式大数据平台',
-    img: '/static/fintech/数融平台@2x.png',
-    href: '/srplatform',
-  };
+
   return (
     <>
       <Head>
@@ -69,8 +70,8 @@ export default () => {
             desc="打通供应链数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧供应链平台，实现供应链智能化运营，并通过供应链金融激活供应链高效发展"
           />
           <Architecture img="/static/smartchain/architecture.png" />
+          <MajorProducts products={products} />
           <Partners partners={partners} title="合作客户" />
-          <Platform {...platform} />
           <ContactUs />
           <Footer />
         </div>

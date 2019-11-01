@@ -8,12 +8,14 @@ import ContactUs from '@components/ContactUs';
 import Footer from '@components/Footer';
 import SolutionIntro from '@components/SolutionIntro';
 import Advantages from './components/Advantages';
-import Platform from '@components/Platform';
+import MajorProducts from '@components/MajorProducts';
+import Partners from '@components/Partners';
 
 export default () => {
   const banner = {
     img: '/static/bigdata/banner@2x.png',
     text: '大数据解决方案',
+    subtext: '提供多场景多行业的深度大数据服务方案帮助传统企业挖掘数据商业价值',
   };
   const prefix = '/static/bigdata/solutions';
   const solutions = [
@@ -74,13 +76,18 @@ export default () => {
       texts: ['解决方案经过行业', '标杆企业的充分验证'],
     },
   ];
-
-  const platform = {
-    title: '数融平台',
-    subtitle: '极简灵活的一站式大数据平台',
-    img: '/static/bigdata/数融平台@2x.png',
-    href: '/srplatform',
-  };
+  const products = [
+    { img: '/static/major/数融平台@2x.png', title: '数融平台', subtitle: '' },
+    { img: '/static/major/数融魔方@2x.png', title: '数融魔方', subtitle: '' },
+    { img: '/static/major/数融智能@2x.png', title: '数融智能', subtitle: '' },
+  ];
+  const partners = [
+    { img: '/static/bigdata/partners/1.png', text: '大海', url: '/' },
+    { img: '/static/bigdata/partners/2.png', text: '神威药业 ', url: '/' },
+    { img: '/static/bigdata/partners/3.png', text: '富春 ', url: '/' },
+    { img: '/static/bigdata/partners/4.png', text: '山东高速 ', url: '/' },
+    { img: '/static/bigdata/partners/5.png', text: '山东大厦 ', url: '/' },
+  ];
 
   return (
     <>
@@ -104,7 +111,8 @@ export default () => {
           <Banner banner={banner} />
           <SolutionIntro solutions={solutions} />
           <Advantages advantages={advantages} />
-          <Platform {...platform} />
+          <MajorProducts products={products} />
+          <Partners partners={partners} title="合作客户" />
           <ContactUs />
           <Footer />
         </div>

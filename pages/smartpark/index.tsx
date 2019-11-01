@@ -7,9 +7,9 @@ import Banner from '@components/Banner';
 import ContactUs from '@components/ContactUs';
 import Footer from '@components/Footer';
 import SolutionIntro from '@components/SolutionIntro';
-import Platform from '@components/Platform';
 import Architecture from '@components/Architecture';
 import Partners from '@components/Partners';
+import MajorProducts from '@components/MajorProducts';
 
 export default () => {
   const banner = {
@@ -18,6 +18,11 @@ export default () => {
     subtext: '集成仓储园区管理软件、智能算法技术、金融科技和智能硬件提升园区综合实力，增加园区收入',
   };
   const prefix = '/static/smartpark/solutions';
+  const products = [
+    { img: '/static/major/数融平台@2x.png', title: '数融平台', subtitle: '' },
+    { img: '/static/major/数融魔方@2x.png', title: '数融魔方', subtitle: '' },
+    { img: '/static/major/数融智能@2x.png', title: '数融智能', subtitle: '' },
+  ];
   const solutions = [
     {
       img: `${prefix}/优势1@2x.png`,
@@ -35,12 +40,7 @@ export default () => {
   const partners = [
     { img: '/static/smartpark/partners/鹊华集团@2x.png', text: '鹊华集团', url: '/' },
   ];
-  const platform = {
-    title: '数融平台',
-    subtitle: '极简灵活的一站式大数据平台',
-    img: '/static/fintech/数融平台@2x.png',
-    href: '/srplatform',
-  };
+
   return (
     <>
       <Head>
@@ -70,8 +70,8 @@ export default () => {
             desc="打通园区数据孤岛构建大数据平台，通过大数据、SaaS化仓储物流管理软件、分析算法、物联网、智能算法及金融科技技术，构建智慧园区平台，智能化运营园区，提高园区管理效率，并通过供应链金融激活园区高效发展"
           />
           <Architecture img="/static/smartpark/architecture.png" />
+          <MajorProducts products={products} />
           <Partners partners={partners} title="合作客户" />
-          <Platform {...platform} />
           <ContactUs />
           <Footer />
         </div>
