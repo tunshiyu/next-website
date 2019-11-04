@@ -10,6 +10,7 @@ export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }
     slickPrev: () => void;
   };
   const settings: Settings = {
+    dots: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
