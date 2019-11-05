@@ -12,7 +12,7 @@ export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }
   const settings: Settings = {
     dots: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     speed: 2000,
     pauseOnHover: false,
@@ -78,15 +78,15 @@ export default ({ banners, banner }: { banners?: BannerItem[]; banner?: Banner }
         </div>
         <div className={styles.card}>
           <span onClick={() => Router.push('/srcube').then(() => window.scrollTo(0, 0))}>
-            数融魔方
+            待开发
           </span>
-          <span>灵活简便的数据应用平台</span>
+          <span>待开发</span>
         </div>
         <div className={styles.card}>
           <span onClick={() => Router.push('/srintel').then(() => window.scrollTo(0, 0))}>
-            数融智能
+            待开发
           </span>
-          <span>场景化垂直化的智能组件平台</span>
+          <span>待开发</span>
         </div>
       </div>
       <div className={styles.mouseImg}></div>

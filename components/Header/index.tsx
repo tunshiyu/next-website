@@ -6,7 +6,7 @@
  * @作者: 陈杰
  * @Date: 2019-08-20 19:05:22
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-09-20 15:49:33
+ * @LastEditTime: 2019-11-05 17:14:53
  */
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.less';
@@ -72,7 +72,7 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
                 <a>数融平台</a>
               </Link>
             </MenuItem>
-            <MenuItem key="2-2">
+            {/* <MenuItem key="2-2">
               <Link href="/srcube">
                 <a>数融魔方</a>
               </Link>
@@ -81,7 +81,7 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
               <Link href="/srintel">
                 <a>数融智能</a>
               </Link>
-            </MenuItem>
+            </MenuItem> */}
           </SubMenu>
           <SubMenu
             title={
@@ -115,31 +115,6 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
               <MenuItem key="3-1-1">
                 <Link href="/logistics">
                   <a>物流大数据</a>
-                </Link>
-              </MenuItem>
-              <MenuItem key="3-1-2">
-                <Link href="/industry">
-                  <a>工业大数据</a>
-                </Link>
-              </MenuItem>
-              <MenuItem key="3-1-3">
-                <Link href="/supplychain">
-                  <a>供应链大数据</a>
-                </Link>
-              </MenuItem>
-              <MenuItem key="3-1-4">
-                <Link href="/hotel">
-                  <a>酒店大数据</a>
-                </Link>
-              </MenuItem>
-              <MenuItem key="3-1-5">
-                <Link href="/smartcity">
-                  <a>智慧城市</a>
-                </Link>
-              </MenuItem>
-              <MenuItem key="3-1-6">
-                <Link href="/airplane">
-                  <a>机场大数据</a>
                 </Link>
               </MenuItem>
               {/* 该组件未提供SubMenu的selected状态，所以加一个匹配的子类，并将其隐藏 */}
@@ -178,50 +153,6 @@ export default function Header({ selectedKeys = [] }: { selectedKeys: string[] }
               <Link href="/fintech">
                 <a>金融科技解决方案</a>
               </Link>
-            </MenuItem>
-            <MenuItem key="3-3">
-              <Link href="/smartpark">
-                <a>智慧园区解决方案</a>
-              </Link>
-            </MenuItem>
-            <MenuItem key="3-4">
-              <Link href="/smartchain">
-                <a>智慧供应链解决方案</a>
-              </Link>
-            </MenuItem>
-          </SubMenu>
-          {/* <MenuItem key="5">
-            <div className={styles.linkWrap}>
-              <Link href="/homepage">
-                <a>支持服务</a>
-              </Link>
-            </div>
-          </MenuItem> */}
-          <SubMenu
-            title={
-              <span className="submenu-title-wrapper">
-                <span>
-                  关于雷数
-                  <i className="iconfont td-arrowdown" />
-                </span>
-              </span>
-            }
-            key="6"
-            popupClassName={styles.popupMenu}
-          >
-            <MenuItem key="6-1">
-              <div className={styles.linkWrap}>
-                <Link href="/about">
-                  <a>公司简介</a>
-                </Link>
-              </div>
-            </MenuItem>
-            <MenuItem key="6-2">
-              <div className={styles.linkWrap}>
-                <Link href="/recruitment">
-                  <a>人才招聘</a>
-                </Link>
-              </div>
             </MenuItem>
           </SubMenu>
         </Menu>

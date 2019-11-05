@@ -6,28 +6,11 @@ export default function Footer() {
   const links = [
     {
       title: '产品中心',
-      links: [
-        { url: '/srplatform', text: '数融平台' },
-        { url: '/srcube', text: '数融魔方' },
-        { url: '/srintel', text: '数融智能' },
-      ],
+      links: [{ url: '/srplatform', text: '数融平台' }],
     },
     {
       title: '解决方案',
-      links: [
-        { url: '/bigdata', text: '大数据' },
-        { url: '/fintech', text: '金融科技' },
-        { url: '/smartpark', text: '智慧园区' },
-        { url: '/smartchain', text: '智慧供应链' },
-      ],
-    },
-    {
-      title: '关于雷数',
-      links: [
-        { url: '/about', text: '公司简介' },
-        { url: '/about', text: '公司新闻' },
-        { url: '/recruitment', text: '人才招聘' },
-      ],
+      links: [{ url: '/bigdata', text: '大数据' }, { url: '/fintech', text: '金融科技' }],
     },
   ];
   return (
@@ -36,9 +19,9 @@ export default function Footer() {
         <div className={styles.content}>
           <div className={styles.left}>
             <img alt="雷数科技" src="/static/logo@2x.png" className={styles.logo} />
-            <div className={styles.info}>浙江省杭州市余杭区文一西路杭师大科技园E座1806室</div>
-            <div className={styles.info}>0571-26270118</div>
-            <div className={styles.info}>leishu@thundersdata.com</div>
+            <div className={styles.info}>浙江省***路***室</div>
+            <div className={styles.info}>****-*******</div>
+            <div className={styles.info}>***@**.com</div>
           </div>
           <div className={styles.right}>
             {links.map((item, index) => (
@@ -57,9 +40,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className={styles.copyright}>
-          杭州雷数科技有限公司 版权所有 ©️ 2017-2019 All Rights Reserved 浙ICP备17054225号-1
-        </div>
+        <div className={styles.copyright}>基于nextjs和nodejs的项目模板</div>
       </div>
     </div>
   );

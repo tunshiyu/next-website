@@ -1,10 +1,10 @@
 /*
- * @文件描述:
+ * @文件描述: 通过设备跳转到项目地址
  * @公司: thundersdata
- * @作者: 陈杰
+ * @作者: 于效仟
  * @Date: 2019-08-08 18:25:50
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-10-21 10:19:13
+ * @LastEditTime: 2019-11-05 17:36:23
  */
 const express = require('express');
 const next = require('next');
