@@ -16,7 +16,12 @@
     "lint:fix": "prettier --write --config .prettierrc.js pages/**/*.tsx components/**/*.tsx constant.ts ",
     "test": "jest --color --passWithNoTests",
     "test:watch": "jest --watch --updateSnapshot",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "preexport": "next build",
+    "export": "next export",
+    "static-run": "next export && serve out",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
+
   },
   "dependencies": {
     "@ice/store": "^0.3.0",
@@ -34,7 +39,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^3.7.0",
-    "react-slick": "^0.24.0"
+    "react-slick": "^0.24.0",
+    "serve": "^11.3.0"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.9",
