@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "node server",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server/index.js",
+    "start": "cross-env NODE_ENV=production node server",
     "tsc": "tsc -p ./tsconfig.json",
     "eslint": "eslint . --ext .ts,.tsx",
     "eslint:fix": "eslint . --fix --ext .ts,.tsx",
@@ -17,8 +17,7 @@
     "test": "jest --color --passWithNoTests",
     "test:watch": "jest --watch --updateSnapshot",
     "test:coverage": "jest --coverage",
-    "preexport": "next build",
-    "export": "next export",
+    "export": "next build && next export && serve out",
     "static-run": "next export && serve out",
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
 
@@ -82,11 +81,7 @@
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run tsc && npm run eslint:fix && npm run lint:fix && npm run test"
-    }
-  },
+  
   "jest": {
     "verbose": false,
     "setupFiles": [

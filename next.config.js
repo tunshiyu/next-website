@@ -2,8 +2,7 @@ const withLess = require('@zeit/next-less');
 const path = require('path');
 const withSourceMaps = require('@zeit/next-source-maps')();
 
-// next.config.js增加代码
-const debug = process.env.NODE_ENV !== 'production';
+// const prod = process.env.NODE_ENV === 'production';
 
 module.exports = withSourceMaps(
   withLess({
@@ -15,7 +14,10 @@ module.exports = withSourceMaps(
     lessLoaderOptions: {
       javascriptEnabled: true,
     },
-    assetPrefix: !debug ? '/next-template/' : '',
+    // assetPrefix: prod ? '/next-website' : '',
+    // publicRuntimeConfig: {
+    //   linkPrefix: prod ? '/next-website' : '',
+    // },
     webpack(config) {
       config.module.rules.push({
         test: /\.js$/,
