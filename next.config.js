@@ -2,6 +2,8 @@ const withLess = require('@zeit/next-less');
 const path = require('path');
 const withSourceMaps = require('@zeit/next-source-maps')();
 
+// const prod = process.env.NODE_ENV === 'production';
+
 module.exports = withSourceMaps(
   withLess({
     cssModules: true,
@@ -12,6 +14,10 @@ module.exports = withSourceMaps(
     lessLoaderOptions: {
       javascriptEnabled: true,
     },
+    // assetPrefix: prod ? '/next-website' : '',
+    // publicRuntimeConfig: {
+    //   linkPrefix: prod ? '/next-website' : '',
+    // },
     webpack(config) {
       config.module.rules.push({
         test: /\.js$/,

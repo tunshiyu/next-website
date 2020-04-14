@@ -10,7 +10,10 @@ export default function Footer() {
     },
     {
       title: '解决方案',
-      links: [{ url: '/bigdata', text: '大数据' }, { url: '/fintech', text: '金融科技' }],
+      links: [
+        { url: '/bigdata', text: '大数据' },
+        { url: '/fintech', text: '金融科技' },
+      ],
     },
   ];
   return (

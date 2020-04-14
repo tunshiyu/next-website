@@ -6,7 +6,7 @@ import Footer from '@components/Footer';
 import Layout from '@components/Layout';
 import Header from '@components/Header';
 
-export default function Homepage() {
+export default () => {
   const banners = [
     {
       img: '/static/homepage/banners/1.png',
@@ -62,4 +62,4 @@ export default function Homepage() {
       </Layout>
     </>
   );
-}
+};

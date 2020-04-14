@@ -6,7 +6,7 @@ import Header from '@components/Header';
 import Banner from '@components/Banner';
 import Footer from '@components/Footer';
 
-export default function Logistics() {
+export default () => {
   const banner = {
     img: '/static/logistics/banner@2x.png',
     text: '大数据解决方案',
@@ -38,4 +38,4 @@ export default function Logistics() {
       </Layout>
     </>
   );
-}
+};
