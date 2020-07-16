@@ -6,9 +6,9 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "dev": "node server",
+    "dev": "next dev",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server",
+    "start": "next start",
     "tsc": "tsc -p ./tsconfig.json",
     "eslint": "eslint . --ext .ts,.tsx",
     "eslint:fix": "eslint . --fix --ext .ts,.tsx",
