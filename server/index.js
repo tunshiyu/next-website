@@ -4,7 +4,7 @@
  * @作者: 于效仟
  * @Date: 2019-08-08 18:25:50
  * @LastEditors: 于效仟
- * @LastEditTime: 2019-11-05 17:36:23
+ * @LastEditTime: 2020-07-16 22:30:11
  */
 const express = require('express');
 const next = require('next');
@@ -33,6 +33,6 @@ app.prepare().then(() => {
 
   server.listen(port, err => {
     if (err) throw err;
-    console.log(`程序已启动`);
+    console.log(`程序已启动 http://localhost:3000/`);
   });
 });

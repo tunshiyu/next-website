@@ -4,6 +4,7 @@ const withSourceMaps = require('@zeit/next-source-maps')();
 
 module.exports = withSourceMaps(
   withLess({
+    distDir: 'build',
     cssModules: true,
     cssLoaderOptions: {
       importLoaders: 1,
